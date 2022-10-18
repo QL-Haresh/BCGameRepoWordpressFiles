@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-vipclub</title>
+	<defs>
+		<image  width="37" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAcBAMAAAAUxWtVAAAAAXNSR0IB2cksfwAAACRQTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6oBuKYgAAAAx0Uk5TABnPwgeY/6E+2MxuFOWPpQAAAMpJREFUeJxjYIACRmUBBnTgmlaAIdaWloEhppaWjMLnSHbgSEtLa2A0a4CLuadN5AKKGUhCzeSwdmAQS8vcBhTLnpaWyMAY3MDgmZYtABKAgGzGsjQDBqCm9GlwscyyNKB+jjR0ALRnGpoQyEnb0MSygWJuaGIJQDFWNDGQE9EtAQfPMlQrHEBiYahWOEBCCRlAQgzV4gSwGBOGteiOCQCLcaOIQUIV1YGQ2GNBFsqERw8CZGERy4aKNSlBwaJVqxaiRCgLgwMLhAUAhAaJZsqb1hAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="17" y="22"/>
+</svg>

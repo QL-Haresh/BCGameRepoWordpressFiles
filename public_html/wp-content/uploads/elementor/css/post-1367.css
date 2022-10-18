@@ -1,0 +1,24 @@
+.elementor-1367 .elementor-element.elementor-element-16b03ab7{--content-width:100%;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--gap:12px;}.elementor-1367 .elementor-element.elementor-element-50f6b5eb{--content-width:100%;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;}.elementor-1367 .elementor-element.elementor-element-50f6b5eb:not(.elementor-motion-effects-element-type-background), .elementor-1367 .elementor-element.elementor-element-50f6b5eb > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(65deg, #6621E4 0%, #1C1E22 100%);}.elementor-1367 .elementor-element.elementor-element-203470{column-gap:0px;text-align:left;color:#FFFFFF;font-family:"Montserrat", Sans-serif;font-size:24px;font-weight:400;}.elementor-1367 .elementor-element.elementor-element-2d8699a{width:100%;max-width:100%;}.elementor-1367 .elementor-element.elementor-element-2d8699a.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-1367 .elementor-element.elementor-element-45becf09{--content-width:100%;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;}.elementor-1367 .elementor-element.elementor-element-45becf09:not(.elementor-motion-effects-element-type-background), .elementor-1367 .elementor-element.elementor-element-45becf09 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:transparent;background-image:linear-gradient(65deg, #1D823B 0%, #1C1E22 100%);}.elementor-1367 .elementor-element.elementor-element-71c3d877{column-gap:0px;text-align:left;color:#FFFFFF;font-family:"Montserrat", Sans-serif;font-size:24px;font-weight:400;}.elementor-1367 .elementor-element.elementor-element-76df6b2b{width:100%;max-width:100%;}.elementor-1367 .elementor-element.elementor-element-76df6b2b.elementor-element{--flex-grow:0;--flex-shrink:0;}@media(min-width:768px){.elementor-1367 .elementor-element.elementor-element-50f6b5eb{--width:50%;}.elementor-1367 .elementor-element.elementor-element-45becf09{--width:50%;}}@media(max-width:1024px) and (min-width:768px){.elementor-1367 .elementor-element.elementor-element-16b03ab7{--width:100%;}}@media(max-width:1024px){.elementor-1367 .elementor-element.elementor-element-16b03ab7{--justify-content:space-around;}}/* Start custom CSS for text-editor, class: .elementor-element-203470 */.casino-text p{
+    margin
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-2d8699a */.sign-up-instantly1 .elementor-button-wrapper .elementor-button {
+    background-color: #5617cb!important;
+    background: conic-gradient(from 1turn,#8447F6,#5617CB)!important;
+    width:100%;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-50f6b5eb */.casino-box{
+    background:linear-gradient(to bottom,#6621E4,#1C1E22 65%)!important
+    ;
+}/* End custom CSS */
+/* Start custom CSS for text-editor, class: .elementor-element-71c3d877 */.casino-text p{
+    margin
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-76df6b2b */.goto-sports .elementor-button-wrapper .elementor-button {
+    background-color: #\#3bc117!important;
+    background: conic-gradient(from 1turn,#6ACF15,#209B44)!important;
+    width:100%;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-45becf09 */.sports-box{
+    background:linear-gradient(to bottom,#1d823b,#1C1E22 65%)!important
+    ;
+}/* End custom CSS */

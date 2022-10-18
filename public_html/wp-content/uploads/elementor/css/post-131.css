@@ -1,0 +1,24 @@
+.elementor-131 .elementor-element.elementor-element-523129a:not(.elementor-motion-effects-element-type-background), .elementor-131 .elementor-element.elementor-element-523129a > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#212121;}.elementor-131 .elementor-element.elementor-element-523129a > .elementor-background-overlay{background-color:#212121;opacity:1;transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-131 .elementor-element.elementor-element-523129a{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:20px 20px 20px 20px;}.elementor-131 .elementor-element.elementor-element-3843310{margin-top:0px;margin-bottom:0px;padding:0px 10px 0px 10px;}.elementor-bc-flex-widget .elementor-131 .elementor-element.elementor-element-e02d492.elementor-column .elementor-widget-wrap{align-items:flex-start;}.elementor-131 .elementor-element.elementor-element-e02d492.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:flex-start;align-items:flex-start;}.elementor-131 .elementor-element.elementor-element-e02d492 > .elementor-widget-wrap > .elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute){margin-bottom:0px;}.elementor-131 .elementor-element.elementor-element-e02d492 > .elementor-element-populated, .elementor-131 .elementor-element.elementor-element-e02d492 > .elementor-element-populated > .elementor-background-overlay, .elementor-131 .elementor-element.elementor-element-e02d492 > .elementor-background-slideshow{border-radius:0px 0px 0px 0px;}.elementor-131 .elementor-element.elementor-element-48854e5{text-align:left;}.elementor-131 .elementor-element.elementor-element-48854e5 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-131 .elementor-element.elementor-element-65e3101{font-family:"Montserrat", Sans-serif;font-size:12px;font-weight:500;font-style:normal;}.elementor-bc-flex-widget .elementor-131 .elementor-element.elementor-element-e9ba212.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-131 .elementor-element.elementor-element-e9ba212.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-131 .elementor-element.elementor-element-e9ba212 > .elementor-element-populated{padding:40px 0px 0px 0px;}.elementor-131 .elementor-element.elementor-element-ccf306b{--e-icon-list-icon-size:0px;}.elementor-131 .elementor-element.elementor-element-ccf306b .elementor-icon-list-text{color:#C0CBD5;padding-left:14px;}.elementor-131 .elementor-element.elementor-element-ccf306b .elementor-icon-list-item:hover .elementor-icon-list-text{color:#43B309;}.elementor-131 .elementor-element.elementor-element-ccf306b .elementor-icon-list-item > .elementor-icon-list-text, .elementor-131 .elementor-element.elementor-element-ccf306b .elementor-icon-list-item > a{font-family:"Montserrat", Sans-serif;font-size:12px;font-weight:bold;text-transform:uppercase;}.elementor-131 .elementor-element.elementor-element-0136f65 > .elementor-element-populated{padding:50px 0px 0px 0px;}.elementor-131 .elementor-element.elementor-element-0ff5554 > .elementor-widget-container{margin:64px 0px 64px 0px;padding:0px 30px 0px 30px;background-color:#212121;}@media(min-width:768px){.elementor-131 .elementor-element.elementor-element-e02d492{width:19.277%;}.elementor-131 .elementor-element.elementor-element-e9ba212{width:17.247%;}.elementor-131 .elementor-element.elementor-element-0136f65{width:63.142%;}}/* Start custom CSS for text-editor, class: .elementor-element-65e3101 */.bcfooter-text{
+    font-size:12px;
+}/* End custom CSS */
+/* Start custom CSS for text-editor, class: .elementor-element-0ff5554 */h2{
+    font-weight: 700;
+    font-size: 1.0625rem;
+    padding: 0 1rem;
+    color:#c0cbd5;
+}
+p{
+    margin: 0.8em 0;
+    color:#99a4b0cc;
+    font-size:14px;
+}
+#moreText {
+  
+            display: none;
+        }
+#textButton{
+    color:#43b309;
+}
+#textButton:hover{
+   cursor: pointer;
+}/* End custom CSS */

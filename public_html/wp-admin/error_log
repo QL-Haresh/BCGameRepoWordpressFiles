@@ -1,0 +1,307 @@
+[05-Sep-2022 05:44:02 UTC] Sync process for Gutenberg Blocks has started.
+[05-Sep-2022 05:44:02 UTC] CATEGORY:Importing categories..
+[05-Sep-2022 05:44:02 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[05-Sep-2022 05:44:02 UTC] CATEGORY:Completed category import.
+[05-Sep-2022 05:44:02 UTC] BLOCK: Getting Total Blocks
+[05-Sep-2022 05:44:02 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[05-Sep-2022 05:44:02 UTC] BLOCK: Requests count 4
+[05-Sep-2022 05:44:02 UTC] BLOCK: Importing request 1 ..
+[05-Sep-2022 05:44:02 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[05-Sep-2022 05:44:02 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[05-Sep-2022 05:44:02 UTC] BLOCK: Completed request 1
+[05-Sep-2022 05:44:02 UTC] BLOCK: Importing request 2 ..
+[05-Sep-2022 05:44:02 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[05-Sep-2022 05:44:02 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[05-Sep-2022 05:44:02 UTC] BLOCK: Completed request 2
+[05-Sep-2022 05:44:02 UTC] BLOCK: Importing request 3 ..
+[05-Sep-2022 05:44:02 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[05-Sep-2022 05:44:02 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[05-Sep-2022 05:44:02 UTC] BLOCK: Completed request 3
+[05-Sep-2022 05:44:02 UTC] BLOCK: Importing request 4 ..
+[05-Sep-2022 05:44:02 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[05-Sep-2022 05:44:02 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[05-Sep-2022 05:44:02 UTC] BLOCK: Completed request 4
+[05-Sep-2022 05:44:02 UTC] SITE: Getting Total Sites
+[05-Sep-2022 05:44:02 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[05-Sep-2022 05:44:02 UTC] SITE: Request count 2
+[05-Sep-2022 05:44:02 UTC] SITE: Importing request 1 ..
+[05-Sep-2022 05:44:02 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[05-Sep-2022 05:44:02 UTC] SITE: Storing in option ast-block-templates-sites-1
+[05-Sep-2022 05:44:02 UTC] SITE: Completed request 1
+[05-Sep-2022 05:44:02 UTC] SITE: Importing request 2 ..
+[05-Sep-2022 05:44:02 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[05-Sep-2022 05:44:03 UTC] SITE: Storing in option ast-block-templates-sites-2
+[05-Sep-2022 05:44:03 UTC] SITE: Completed request 2
+[05-Sep-2022 05:44:03 UTC] Sync process for Gutenberg Blocks is done.
+[15-Sep-2022 05:44:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on bool in /home/bcgameco/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:294
+Stack trace:
+#0 /home/bcgameco/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(167): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(NULL, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /home/bcgameco/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /home/bcgameco/public_html/wp-includes/class-wp-hook.php(307): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /home/bcgameco/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /home/bcgameco/ in /home/bcgameco/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 294
+[15-Sep-2022 05:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on bool in /home/bcgameco/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:294
+Stack trace:
+#0 /home/bcgameco/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(167): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(NULL, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /home/bcgameco/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /home/bcgameco/public_html/wp-includes/class-wp-hook.php(307): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /home/bcgameco/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 /home/bcgameco/ in /home/bcgameco/public_html/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 294
+[17-Sep-2022 14:39:31 UTC] Sync process for Gutenberg Blocks has started.
+[17-Sep-2022 14:39:31 UTC] CATEGORY:Importing categories..
+[17-Sep-2022 14:39:31 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[17-Sep-2022 14:39:31 UTC] CATEGORY:Completed category import.
+[17-Sep-2022 14:39:31 UTC] BLOCK: Getting Total Blocks
+[17-Sep-2022 14:39:31 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[17-Sep-2022 14:39:33 UTC] BLOCK: Requests count 4
+[17-Sep-2022 14:39:33 UTC] BLOCK: Importing request 1 ..
+[17-Sep-2022 14:39:33 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[17-Sep-2022 14:39:33 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[17-Sep-2022 14:39:33 UTC] BLOCK: Completed request 1
+[17-Sep-2022 14:39:33 UTC] BLOCK: Importing request 2 ..
+[17-Sep-2022 14:39:33 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[17-Sep-2022 14:39:33 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[17-Sep-2022 14:39:33 UTC] BLOCK: Completed request 2
+[17-Sep-2022 14:39:33 UTC] BLOCK: Importing request 3 ..
+[17-Sep-2022 14:39:33 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[17-Sep-2022 14:39:33 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[17-Sep-2022 14:39:33 UTC] BLOCK: Completed request 3
+[17-Sep-2022 14:39:33 UTC] BLOCK: Importing request 4 ..
+[17-Sep-2022 14:39:33 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[17-Sep-2022 14:39:33 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[17-Sep-2022 14:39:33 UTC] BLOCK: Completed request 4
+[17-Sep-2022 14:39:33 UTC] SITE: Getting Total Sites
+[17-Sep-2022 14:39:33 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[17-Sep-2022 14:39:33 UTC] SITE: Request count 2
+[17-Sep-2022 14:39:33 UTC] SITE: Importing request 1 ..
+[17-Sep-2022 14:39:33 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[17-Sep-2022 14:39:33 UTC] SITE: Storing in option ast-block-templates-sites-1
+[17-Sep-2022 14:39:33 UTC] SITE: Completed request 1
+[17-Sep-2022 14:39:33 UTC] SITE: Importing request 2 ..
+[17-Sep-2022 14:39:33 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[17-Sep-2022 14:39:34 UTC] SITE: Storing in option ast-block-templates-sites-2
+[17-Sep-2022 14:39:34 UTC] SITE: Completed request 2
+[17-Sep-2022 14:39:34 UTC] Sync process for Gutenberg Blocks is done.
+[26-Sep-2022 02:50:17 UTC] Sync process for Gutenberg Blocks has started.
+[26-Sep-2022 02:50:17 UTC] CATEGORY:Importing categories..
+[26-Sep-2022 02:50:17 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[26-Sep-2022 02:50:17 UTC] CATEGORY:Completed category import.
+[26-Sep-2022 02:50:17 UTC] BLOCK: Getting Total Blocks
+[26-Sep-2022 02:50:17 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[26-Sep-2022 02:50:17 UTC] BLOCK: Requests count 4
+[26-Sep-2022 02:50:17 UTC] BLOCK: Importing request 1 ..
+[26-Sep-2022 02:50:17 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[26-Sep-2022 02:50:17 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[26-Sep-2022 02:50:17 UTC] BLOCK: Completed request 1
+[26-Sep-2022 02:50:17 UTC] BLOCK: Importing request 2 ..
+[26-Sep-2022 02:50:17 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[26-Sep-2022 02:50:17 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[26-Sep-2022 02:50:17 UTC] BLOCK: Completed request 2
+[26-Sep-2022 02:50:17 UTC] BLOCK: Importing request 3 ..
+[26-Sep-2022 02:50:17 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[26-Sep-2022 02:50:17 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[26-Sep-2022 02:50:17 UTC] BLOCK: Completed request 3
+[26-Sep-2022 02:50:17 UTC] BLOCK: Importing request 4 ..
+[26-Sep-2022 02:50:17 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[26-Sep-2022 02:50:17 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[26-Sep-2022 02:50:17 UTC] BLOCK: Completed request 4
+[26-Sep-2022 02:50:17 UTC] SITE: Getting Total Sites
+[26-Sep-2022 02:50:17 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[26-Sep-2022 02:50:17 UTC] SITE: Request count 2
+[26-Sep-2022 02:50:17 UTC] SITE: Importing request 1 ..
+[26-Sep-2022 02:50:17 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[26-Sep-2022 02:50:17 UTC] SITE: Storing in option ast-block-templates-sites-1
+[26-Sep-2022 02:50:17 UTC] SITE: Completed request 1
+[26-Sep-2022 02:50:17 UTC] SITE: Importing request 2 ..
+[26-Sep-2022 02:50:17 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[26-Sep-2022 02:50:17 UTC] SITE: Storing in option ast-block-templates-sites-2
+[26-Sep-2022 02:50:17 UTC] SITE: Completed request 2
+[26-Sep-2022 02:50:17 UTC] Sync process for Gutenberg Blocks is done.
+[28-Sep-2022 06:49:52 UTC] Sync process for Gutenberg Blocks has started.
+[28-Sep-2022 06:49:52 UTC] CATEGORY:Importing categories..
+[28-Sep-2022 06:49:52 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[28-Sep-2022 06:49:52 UTC] CATEGORY:Completed category import.
+[28-Sep-2022 06:49:52 UTC] BLOCK: Getting Total Blocks
+[28-Sep-2022 06:49:52 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[28-Sep-2022 06:49:53 UTC] BLOCK: Requests count 4
+[28-Sep-2022 06:49:53 UTC] BLOCK: Importing request 1 ..
+[28-Sep-2022 06:49:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[28-Sep-2022 06:49:53 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[28-Sep-2022 06:49:53 UTC] BLOCK: Completed request 1
+[28-Sep-2022 06:49:53 UTC] BLOCK: Importing request 2 ..
+[28-Sep-2022 06:49:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[28-Sep-2022 06:49:53 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[28-Sep-2022 06:49:53 UTC] BLOCK: Completed request 2
+[28-Sep-2022 06:49:53 UTC] BLOCK: Importing request 3 ..
+[28-Sep-2022 06:49:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[28-Sep-2022 06:49:53 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[28-Sep-2022 06:49:53 UTC] BLOCK: Completed request 3
+[28-Sep-2022 06:49:53 UTC] BLOCK: Importing request 4 ..
+[28-Sep-2022 06:49:53 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[28-Sep-2022 06:49:53 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[28-Sep-2022 06:49:53 UTC] BLOCK: Completed request 4
+[28-Sep-2022 06:49:53 UTC] SITE: Getting Total Sites
+[28-Sep-2022 06:49:53 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[28-Sep-2022 06:49:53 UTC] SITE: Request count 2
+[28-Sep-2022 06:49:53 UTC] SITE: Importing request 1 ..
+[28-Sep-2022 06:49:53 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[28-Sep-2022 06:49:53 UTC] SITE: Storing in option ast-block-templates-sites-1
+[28-Sep-2022 06:49:53 UTC] SITE: Completed request 1
+[28-Sep-2022 06:49:53 UTC] SITE: Importing request 2 ..
+[28-Sep-2022 06:49:53 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[28-Sep-2022 06:49:53 UTC] SITE: Storing in option ast-block-templates-sites-2
+[28-Sep-2022 06:49:53 UTC] SITE: Completed request 2
+[28-Sep-2022 06:49:53 UTC] Sync process for Gutenberg Blocks is done.
+[04-Oct-2022 07:03:13 UTC] Sync process for Gutenberg Blocks has started.
+[04-Oct-2022 07:03:13 UTC] CATEGORY:Importing categories..
+[04-Oct-2022 07:03:13 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[04-Oct-2022 07:03:13 UTC] CATEGORY:Completed category import.
+[04-Oct-2022 07:03:13 UTC] BLOCK: Getting Total Blocks
+[04-Oct-2022 07:03:13 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[04-Oct-2022 07:03:13 UTC] BLOCK: Requests count 4
+[04-Oct-2022 07:03:13 UTC] BLOCK: Importing request 1 ..
+[04-Oct-2022 07:03:13 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[04-Oct-2022 07:03:14 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[04-Oct-2022 07:03:14 UTC] BLOCK: Completed request 1
+[04-Oct-2022 07:03:14 UTC] BLOCK: Importing request 2 ..
+[04-Oct-2022 07:03:14 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[04-Oct-2022 07:03:14 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[04-Oct-2022 07:03:14 UTC] BLOCK: Completed request 2
+[04-Oct-2022 07:03:14 UTC] BLOCK: Importing request 3 ..
+[04-Oct-2022 07:03:14 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[04-Oct-2022 07:03:14 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[04-Oct-2022 07:03:14 UTC] BLOCK: Completed request 3
+[04-Oct-2022 07:03:14 UTC] BLOCK: Importing request 4 ..
+[04-Oct-2022 07:03:14 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[04-Oct-2022 07:03:14 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[04-Oct-2022 07:03:14 UTC] BLOCK: Completed request 4
+[04-Oct-2022 07:03:14 UTC] SITE: Getting Total Sites
+[04-Oct-2022 07:03:14 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[04-Oct-2022 07:03:14 UTC] SITE: Request count 2
+[04-Oct-2022 07:03:14 UTC] SITE: Importing request 1 ..
+[04-Oct-2022 07:03:14 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[04-Oct-2022 07:03:14 UTC] SITE: Storing in option ast-block-templates-sites-1
+[04-Oct-2022 07:03:14 UTC] SITE: Completed request 1
+[04-Oct-2022 07:03:14 UTC] SITE: Importing request 2 ..
+[04-Oct-2022 07:03:14 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[04-Oct-2022 07:03:14 UTC] SITE: Storing in option ast-block-templates-sites-2
+[04-Oct-2022 07:03:14 UTC] SITE: Completed request 2
+[04-Oct-2022 07:03:14 UTC] Sync process for Gutenberg Blocks is done.
+[05-Oct-2022 23:05:54 UTC] WordPress database error Can't DROP 'application'; check that column/key exists for query ALTER TABLE `wpwb_nextend2_section_storage` DROP INDEX `application` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, smart_slider_3_plugins_loaded, require_once('/plugins/smart-slider-3/Nextend/Autoloader.php'), Nextend\Autoloader::getInstance, Nextend\Autoloader->__construct, call_user_func_array, Nextend\SmartSlider3\SmartSlider3::getInstance, Nextend\SmartSlider3\SmartSlider3->__construct, Nextend\SmartSlider3\SmartSlider3->init, Nextend\SmartSlider3\Platform\SmartSlider3Platform::getInstance, Nextend\SmartSlider3\Platform\SmartSlider3Platform->__construct, Nextend\SmartSlider3\Platform\WordPress\SmartSlider3PlatformWordPress->start, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->installOrUpgrade, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->install, Nextend\SmartSlider3\Install\Install::install, Nextend\SmartSlider3\Install\Tables->install, Nextend\SmartSlider3\Install\Tables->query, Nextend\Framework\Database\Database::query, Nextend\Framework\Database\WordPress\WordPressConnector->query
+[05-Oct-2022 23:05:54 UTC] WordPress database error Duplicate key name 'application' for query ALTER TABLE `wpwb_nextend2_section_storage` ADD INDEX `application` (`application`, `section`(50), `referencekey`(50)) made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, smart_slider_3_plugins_loaded, require_once('/plugins/smart-slider-3/Nextend/Autoloader.php'), Nextend\Autoloader::getInstance, Nextend\Autoloader->__construct, call_user_func_array, Nextend\SmartSlider3\SmartSlider3::getInstance, Nextend\SmartSlider3\SmartSlider3->__construct, Nextend\SmartSlider3\SmartSlider3->init, Nextend\SmartSlider3\Platform\SmartSlider3Platform::getInstance, Nextend\SmartSlider3\Platform\SmartSlider3Platform->__construct, Nextend\SmartSlider3\Platform\WordPress\SmartSlider3PlatformWordPress->start, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->installOrUpgrade, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->install, Nextend\SmartSlider3\Install\Install::install, Nextend\SmartSlider3\Install\Tables->install, Nextend\SmartSlider3\Install\Tables->query, Nextend\Framework\Database\Database::query, Nextend\Framework\Database\WordPress\WordPressConnector->query
+[05-Oct-2022 23:05:54 UTC] WordPress database error Duplicate key name 'application_2' for query ALTER TABLE `wpwb_nextend2_section_storage` ADD INDEX `application_2` (`application`, `section`(50)) made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, smart_slider_3_plugins_loaded, require_once('/plugins/smart-slider-3/Nextend/Autoloader.php'), Nextend\Autoloader::getInstance, Nextend\Autoloader->__construct, call_user_func_array, Nextend\SmartSlider3\SmartSlider3::getInstance, Nextend\SmartSlider3\SmartSlider3->__construct, Nextend\SmartSlider3\SmartSlider3->init, Nextend\SmartSlider3\Platform\SmartSlider3Platform::getInstance, Nextend\SmartSlider3\Platform\SmartSlider3Platform->__construct, Nextend\SmartSlider3\Platform\WordPress\SmartSlider3PlatformWordPress->start, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->installOrUpgrade, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->install, Nextend\SmartSlider3\Install\Install::install, Nextend\SmartSlider3\Install\Tables->install, Nextend\SmartSlider3\Install\Tables->query, Nextend\Framework\Database\Database::query, Nextend\Framework\Database\WordPress\WordPressConnector->query
+[05-Oct-2022 23:05:55 UTC] WordPress database error Can't DROP 'thumbnail'; check that column/key exists for query ALTER TABLE `wpwb_nextend2_smartslider3_slides` DROP INDEX `thumbnail` made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, smart_slider_3_plugins_loaded, require_once('/plugins/smart-slider-3/Nextend/Autoloader.php'), Nextend\Autoloader::getInstance, Nextend\Autoloader->__construct, call_user_func_array, Nextend\SmartSlider3\SmartSlider3::getInstance, Nextend\SmartSlider3\SmartSlider3->__construct, Nextend\SmartSlider3\SmartSlider3->init, Nextend\SmartSlider3\Platform\SmartSlider3Platform::getInstance, Nextend\SmartSlider3\Platform\SmartSlider3Platform->__construct, Nextend\SmartSlider3\Platform\WordPress\SmartSlider3PlatformWordPress->start, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->installOrUpgrade, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->install, Nextend\SmartSlider3\Install\Install::install, Nextend\SmartSlider3\Install\Tables->install, Nextend\SmartSlider3\Install\Tables->query, Nextend\Framework\Database\Database::query, Nextend\Framework\Database\WordPress\WordPressConnector->query
+[05-Oct-2022 23:05:55 UTC] WordPress database error Duplicate key name 'thumbnail' for query ALTER TABLE `wpwb_nextend2_smartslider3_slides` ADD INDEX `thumbnail` (`thumbnail`(100)) made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, smart_slider_3_plugins_loaded, require_once('/plugins/smart-slider-3/Nextend/Autoloader.php'), Nextend\Autoloader::getInstance, Nextend\Autoloader->__construct, call_user_func_array, Nextend\SmartSlider3\SmartSlider3::getInstance, Nextend\SmartSlider3\SmartSlider3->__construct, Nextend\SmartSlider3\SmartSlider3->init, Nextend\SmartSlider3\Platform\SmartSlider3Platform::getInstance, Nextend\SmartSlider3\Platform\SmartSlider3Platform->__construct, Nextend\SmartSlider3\Platform\WordPress\SmartSlider3PlatformWordPress->start, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->installOrUpgrade, Nextend\SmartSlider3\Platform\WordPress\HelperInstall->install, Nextend\SmartSlider3\Install\Install::install, Nextend\SmartSlider3\Install\Tables->install, Nextend\SmartSlider3\Install\Tables->query, Nextend\Framework\Database\Database::query, Nextend\Framework\Database\WordPress\WordPressConnector->query
+[06-Oct-2022 05:46:37 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[10-Oct-2022 07:11:43 UTC] WordPress database error Table 'wpwb_wpr_rucss_used_css' already exists for query CREATE TABLE wpwb_wpr_rucss_used_css ( 
+			id               bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+			url              varchar(2000)       NOT NULL default '',
+			css              longtext                     default NULL,
+			hash             varchar(32)                  default '',
+			unprocessedcss   longtext                NULL,
+			retries          tinyint(1)          NOT NULL default 1,
+			is_mobile        tinyint(1)          NOT NULL default 0,
+			job_id           varchar(255)        NOT NULL default '',
+			queue_name       varchar(255)        NOT NULL default '',
+			status           varchar(255)        NOT NULL default '',
+			modified         timestamp           NOT NULL default '0000-00-00 00:00:00',
+			last_accessed    timestamp           NOT NULL default '0000-00-00 00:00:00',
+			PRIMARY KEY (id),
+			KEY url (url(150), is_mobile),
+			KEY modified (modified),
+			KEY last_accessed (last_accessed),
+			INDEX `queue_name_index` (`queue_name`),
+			KEY hash (hash) ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Rocket\Dependencies\Database\Table->maybe_upgrade, WP_Rocket\Dependencies\Database\Table->install, WP_Rocket\Dependencies\Database\Table->create
+[13-Oct-2022 01:41:41 UTC] Sync process for Gutenberg Blocks has started.
+[13-Oct-2022 01:41:41 UTC] CATEGORY:Importing categories..
+[13-Oct-2022 01:41:41 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[13-Oct-2022 01:41:41 UTC] CATEGORY:Completed category import.
+[13-Oct-2022 01:41:41 UTC] BLOCK: Getting Total Blocks
+[13-Oct-2022 01:41:41 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[13-Oct-2022 01:41:41 UTC] BLOCK: Requests count 4
+[13-Oct-2022 01:41:41 UTC] BLOCK: Importing request 1 ..
+[13-Oct-2022 01:41:41 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[13-Oct-2022 01:41:41 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[13-Oct-2022 01:41:41 UTC] BLOCK: Completed request 1
+[13-Oct-2022 01:41:41 UTC] BLOCK: Importing request 2 ..
+[13-Oct-2022 01:41:41 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[13-Oct-2022 01:41:41 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[13-Oct-2022 01:41:41 UTC] BLOCK: Completed request 2
+[13-Oct-2022 01:41:41 UTC] BLOCK: Importing request 3 ..
+[13-Oct-2022 01:41:41 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[13-Oct-2022 01:41:41 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[13-Oct-2022 01:41:41 UTC] BLOCK: Completed request 3
+[13-Oct-2022 01:41:41 UTC] BLOCK: Importing request 4 ..
+[13-Oct-2022 01:41:41 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[13-Oct-2022 01:41:41 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[13-Oct-2022 01:41:41 UTC] BLOCK: Completed request 4
+[13-Oct-2022 01:41:41 UTC] SITE: Getting Total Sites
+[13-Oct-2022 01:41:41 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[13-Oct-2022 01:41:42 UTC] SITE: Request count 2
+[13-Oct-2022 01:41:42 UTC] SITE: Importing request 1 ..
+[13-Oct-2022 01:41:42 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[13-Oct-2022 01:41:42 UTC] SITE: Storing in option ast-block-templates-sites-1
+[13-Oct-2022 01:41:42 UTC] SITE: Completed request 1
+[13-Oct-2022 01:41:42 UTC] SITE: Importing request 2 ..
+[13-Oct-2022 01:41:42 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[13-Oct-2022 01:41:42 UTC] SITE: Storing in option ast-block-templates-sites-2
+[13-Oct-2022 01:41:42 UTC] SITE: Completed request 2
+[13-Oct-2022 01:41:42 UTC] Sync process for Gutenberg Blocks is done.
+[13-Oct-2022 11:20:35 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:20:41 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:20:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:21:10 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:21:21 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:21:39 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:21:49 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:21:54 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:26:00 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:26:38 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:26:55 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:30:23 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:36:09 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[13-Oct-2022 11:39:09 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[14-Oct-2022 05:06:47 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 90112 bytes) in /home/bcgameco/public_html/wp-content/plugins/search-and-replace/inc/Database/Replace.php on line 305
+[14-Oct-2022 05:07:31 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 90112 bytes) in /home/bcgameco/public_html/wp-content/plugins/search-and-replace/inc/Database/Replace.php on line 305
+[14-Oct-2022 06:15:30 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 81920 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[14-Oct-2022 06:18:51 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[14-Oct-2022 06:20:12 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[14-Oct-2022 06:21:24 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[14-Oct-2022 06:21:52 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 434176 bytes) in /home/bcgameco/public_html/wp-includes/wp-db.php on line 2135
+[14-Oct-2022 06:24:57 UTC] Sync process for Gutenberg Blocks has started.
+[14-Oct-2022 06:24:57 UTC] CATEGORY:Importing categories..
+[14-Oct-2022 06:24:57 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[14-Oct-2022 06:24:57 UTC] CATEGORY:Completed category import.
+[14-Oct-2022 06:24:57 UTC] BLOCK: Getting Total Blocks
+[14-Oct-2022 06:24:57 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[14-Oct-2022 06:24:58 UTC] BLOCK: Requests count 4
+[14-Oct-2022 06:24:58 UTC] BLOCK: Importing request 1 ..
+[14-Oct-2022 06:24:58 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[14-Oct-2022 06:24:58 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[14-Oct-2022 06:24:58 UTC] BLOCK: Completed request 1
+[14-Oct-2022 06:24:58 UTC] BLOCK: Importing request 2 ..
+[14-Oct-2022 06:24:58 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[14-Oct-2022 06:24:58 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[14-Oct-2022 06:24:58 UTC] BLOCK: Completed request 2
+[14-Oct-2022 06:24:58 UTC] BLOCK: Importing request 3 ..
+[14-Oct-2022 06:24:58 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[14-Oct-2022 06:24:58 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[14-Oct-2022 06:24:58 UTC] BLOCK: Completed request 3
+[14-Oct-2022 06:24:58 UTC] BLOCK: Importing request 4 ..
+[14-Oct-2022 06:24:58 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[14-Oct-2022 06:24:58 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[14-Oct-2022 06:24:58 UTC] BLOCK: Completed request 4
+[14-Oct-2022 06:24:58 UTC] SITE: Getting Total Sites
+[14-Oct-2022 06:24:58 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[14-Oct-2022 06:24:58 UTC] SITE: Request count 2
+[14-Oct-2022 06:24:58 UTC] SITE: Importing request 1 ..
+[14-Oct-2022 06:24:58 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[14-Oct-2022 06:24:58 UTC] SITE: Storing in option ast-block-templates-sites-1
+[14-Oct-2022 06:24:58 UTC] SITE: Completed request 1
+[14-Oct-2022 06:24:58 UTC] SITE: Importing request 2 ..
+[14-Oct-2022 06:24:58 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[14-Oct-2022 06:24:58 UTC] SITE: Storing in option ast-block-templates-sites-2
+[14-Oct-2022 06:24:58 UTC] SITE: Completed request 2
+[14-Oct-2022 06:24:58 UTC] Sync process for Gutenberg Blocks is done.

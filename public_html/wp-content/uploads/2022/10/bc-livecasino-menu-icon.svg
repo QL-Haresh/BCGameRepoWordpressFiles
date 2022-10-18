@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-livecasino-icon</title>
+	<defs>
+		<image  width="42" height="44" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAsCAMAAAAkRNp0AAAAAXNSR0IB2cksfwAAAGlQTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6JpTLNwAAACN0Uk5TABeWxzH+Bf/x0ESi/FGqJ8R/yshVcogOw/v9q+fb7/mUWm6UR22iAAABd0lEQVR4nI2Vi5ZDQAyGS81EyWK7aE0v2r7/Q27MhaHI/Jyeiu/8kkyMw2GpKD4e4+QrvKJEaMWSJSMhQtl4wCClHzaHk0YBhMgCUDDiXCPh0JzLNR9RNlXh0JQjJSKeNPrDoYfcsqwpCQGR0IInE9spKNnFqohCU1dR7Ob7O6yTM0Y8b5PyDKO0904WHqrxnQQKz3EQjxqddxei8KqCP+rCGlTWTdu2BQhP1LG2berLDKyvxqijw3MFVHTgrRxBeUNTCQ1AenfkvUxNlOB6IpW9raDLHZornJ5g2QbUGBqm5fF8Ph8PhM5D9UzIix/R6YFSc450NaYLTZXh+BeBSpPXBWgK7LpuHm/IFdU8hriktFr5jW7otuK6hZIrBKGqJ9c+iISKOgDIk6QXuUIfkAJq1yrIVAyuuU1m25BOs91mAZYkPVl27Pq+h9Vu6DfirdGoctdrnLn1sqPt2M2Hi5fbO6T8CNhxreZfkCT7bOgdLd9uye6S/7yBKA6GMkM1AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="15" y="14"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-esports-menu-icon</title>
+	<defs>
+		<image  width="37" height="29" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAdCAMAAAAaaVXxAAAAAXNSR0IB2cksfwAAAE5QTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6lWKBoQAAABp0Uk5TAGz3//s0AgWZEmZWM8bMKSishQ1Duv5tWvCV2ySMAAAA0UlEQVR4nI2T0RaCIAxAR0smqSmiVP//ow2OqcDU7oMP99zWCAMQUDfcuFdaaoBq3FdKjADMY0dDcZZpErcZtRmAbL4uTMgo3bWRDKOLM+hSUds9mS4+n10vGf5gl29RGqav9xjRBNkGqoiJK5UmO3cjGnbJuZVosvn9gfmP4RquLF4xaqDhKrMu3BCll+Ymyq+12FK72Vv5Fd5Bs/c45tNyOPKIr/No9LHC6exL336pcDiOJr9WH3e0m7P4i/hXOpxluViiswPQysnyAeH/A/AFRnMRZHFji80AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="17" y="24"/>
+</svg>

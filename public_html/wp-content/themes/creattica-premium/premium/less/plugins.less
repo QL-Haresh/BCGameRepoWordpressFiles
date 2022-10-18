@@ -1,0 +1,448 @@
+/**
+ * Theme and WordPress Plugins
+ * ========================================================
+ */
+
+
+/************* Light Slider *************/
+
+.lSSlideOuter { position: relative; }
+.lightSlider {
+	height: 0; overflow: hidden; /* To prevent F.O.U.C. */
+	.transition( height 0.8s linear; );
+	.style-light {
+		color: #ffffff;
+		padding: 0;
+		h1, h2, h3, h4, h5, h6, a { color: inherit; }
+	}
+	.style-dark {
+		color: #555555;
+		padding: 0;
+		h1, h2, h3, h4, h5, h6 { color: #444444; }
+	}
+	.style-light-on-dark {
+		color: #ffffff;
+		background: rgba(0,0,0,0.45);
+		h1, h2, h3, h4, h5, h6, a { color: inherit; }
+	}
+	.style-dark-on-light {
+		color: #555555;
+		background: rgba(255,255,255,0.70);
+		h1, h2, h3, h4, h5, h6 { color: #444444; }
+	}
+}
+ul.lightSlider, #page-wrapper ul.lightSlider {
+	margin: 0;
+	list-style: none;
+}
+.lSAction > a {
+	background-image: none;
+	.opacity(100);
+	z-index: 998;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	margin: 0;
+	display: none;
+}
+.lSSlideWrapper:hover .lSAction > a { display: block; }
+.lSAction > a:after {
+	.fontawesome();
+	position: absolute;
+	top: 45%;
+	color: #444;
+	font-size: 40px;
+}
+.lSAction > .lSPrev {
+	left: 0;
+	&:after { content: "\f104"; left: 6px; }
+}
+.lSAction > .lSNext {
+	right: 0;
+	&:after { content: "\f105"; right: 6px; }
+}
+.lSAction > a:hover { background-color: rgba( 255,255,255,0.5 ); }
+#page-wrapper .lSSlideOuter ul.lSPager {
+	// margin: 0;
+	margin-top: 0 !important;
+	// list-style: none outside none;
+}
+#page-wrapper .lSSlideOuter .lSPager.lSpg > li {
+	padding: 2px 5px;
+	display: inline-block;
+}
+#page-wrapper .lSSlideOuter .lSPager.lSpg > li a {
+	width: 25px;
+	height: 10px;
+	border-radius: 0;
+}
+.lSSlideOuter .lSPager.lSpg > li:hover a,
+.lSSlideOuter .lSPager.lSpg > li.active a { background-color: @accentColor; }
+
+/*** Responsive Light Slider ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.lightSlider {
+		.style-light, .style-light-on-dark { background: rgba(0,0,0,0.60); }
+		.style-dark, .style-dark-on-light { background: rgba(255,255,255,0.70); }
+	}
+	#page-wrapper .lSSlideOuter .lSPager.lSpg > li { padding: 10px 10px 5px; }
+	#page-wrapper .lSSlideOuter .lSPager.lSpg > li a {
+		width: 30px;
+		height: 15px;
+		border-radius: 0;
+	}
+}
+@media only screen and (min-width: @breakPointUpper) {
+	#page-wrapper .hootslider-html-wrapper ul.lSPager,
+	#page-wrapper .hootslider-image-wrapper ul.lSPager {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+
+/************* Light Gallery *************/
+
+// #lg-slider .lg-slide { background-image: url(images/loading.gif); }
+// .customHtml {
+// 	background-color: rgba(0, 0, 0, 0.65);
+// 	height: auto;
+// 	padding: 10px 0;
+// 	position: absolute;
+// 	top: 0;
+// 	width: 100%;
+// }
+.customHtml > h4,
+.customHtml p {
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 1.4285em;
+	margin: 3px 0;
+}
+.customHtml > h4 {
+	font-size: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+/************* Parallax *************/
+
+#page-wrapper .parallax-mirror {
+	z-index: inherit !important; // We have modified js so parallax-mirror comes inside page-wrapper when it is a boxed site layout. Change z-index from -100 to inherit so that parallax-mirror comes on top of page-wrapper opening div and hence is not hidden because of background color set for page-wrapper
+}
+
+
+/************* Contact Form 7 *************/
+
+.hoot-cf7-style {
+	.wpcf7-form {
+		p.required:before {
+			margin-right: 5px;
+			// color: #af2c20;
+			.opacity(50);
+			content: "\f069";
+			display: inline-block;
+			font: normal normal 900 0.666666em/2.5em 'Font Awesome 5 Free';
+			vertical-align: top;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		p {
+			text-transform: uppercase;
+			// font-weight: bold;
+			// font-size: 0.8em;
+			width: 28%;
+			margin-right: 5%;
+			float: left;
+			&.full {
+				width: 94%;
+				float: none;
+				clear: both;
+			}
+			.wpcf7-form-control-wrap {}
+			.wpcf7-list-item-label,
+			.wpcf7-quiz-label {
+				text-transform: none;
+				// font-size: 1.25em;
+				font-weight: normal; // important to add weight otherwise browser adds it to <label>
+			}
+			input, textarea, select {
+				width: 100%;
+				// font-size: 1.25em;
+			}
+			input[type="checkbox"],
+			input[type="radio"] { width: auto; }
+		}
+		p:nth-of-type(3n+1){ clear: both; }
+		.submit {
+			.clearfix();
+			clear: both;
+			float: none;
+			width: 100%;
+			input { width: auto; }
+		}
+		.wpcf7-form-control-wrap { .clearfix(); } // .g-recaptcha
+	}
+	div.wpcf7-validation-errors,
+	div.wpcf7-mail-sent-ng,
+	div.wpcf7-mail-sent-ok {
+		margin: -@smallVerticalMargin 0 @verticalMargin;
+		border: 0;
+	}
+	div.wpcf7-validation-errors {
+		background: #fae9bf;
+		color: #807000;
+	}
+	div.wpcf7-mail-sent-ng {
+		background: #faece8;
+		color: #af2c20;
+	}
+	div.wpcf7-mail-sent-ok {
+		background: #eefae8;
+		color: #769754;
+	}
+}
+
+/*** Responsive Contact Form 7 ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.hoot-cf7-style .wpcf7-form p,
+	.hoot-cf7-style .wpcf7-form p.full {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+	}
+}
+
+
+/************* MapPress Google Maps *************/
+
+.hoot-mapp-style {
+	.mapp-layout {
+		border: none;
+		max-width: 100%;
+		margin: 0;
+	}
+	.mapp-map-links { border: none; }
+	.mapp-links a:first-child:after { content: " /"; }
+	/* Use default styles in mappress.css for rest */
+}
+#frontpage-page-content .mapp-layout {
+	width: auto !important;
+	max-width: inherit;
+	margin: 0 -@hgridSpanGutter;
+}
+@media only screen and (max-width: @higherBreakPoint) {
+	#frontpage-page-content .mapp-layout { margin: 0 -@hgridSpanResponsiveGutter; }
+}
+
+
+/************* Woocommerce *************/
+
+.woocommerce ul.products,
+.woocommerce-page ul.products,
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product { .box-sizing( border-box ); }
+// only on shop page
+.woocommerce.archive ul.products,
+.woocommerce-page.archive ul.products { margin: @verticalMargin 0 0 0; }
+.woocommerce.archive ul.products li.product,
+.woocommerce-page.archive ul.products li.product { margin: 0 3.8% 2.992em 0; padding-top: 0; }
+.woocommerce.archive ul.products li.last,
+.woocommerce-page.archive ul.products li.last { margin-right: 0; }
+
+/* Remove title from product page since we already have it in theme title area (loop-meta) */
+.woocommerce.singular .product .product_title { display: none; }
+
+/* Singular Product */
+.upsells.products, .related.products { clear:both; }
+
+/* Pages - Account, Cart, Checkout */
+.woocommerce-account, .woocommerce-cart, .woocommerce-checkout {
+	.entry-content { border-bottom: none; }
+	#comments-template { display: none; }
+	.sharedaddy { display: none; }
+}
+
+/* Misc */
+.flex-viewport figure { max-width: none; } // Product Gallery Flex Slider
+
+/*** Responsive Woocommerce ***/
+
+/* Use 768px instead of @breakPoint to stay compatible with default woocommerce stylesheet */
+@media only screen and (max-width: 768px) {
+	.woocommerce.archive.plural ul.products li.product, .woocommerce-page.archive.plural ul.products li.product {
+		// Copied from woocommerce stylesheet
+		width: 48%;
+		margin: 0 0 2.992em;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.woocommerce-notices-wrapper {
+		.woocommerce-error, .woocommerce-info, .woocommerce-message {
+			text-align: center;
+			a { display: block; float: none; }
+		}
+	}
+}
+
+
+/************* Jetpack *************/
+
+/*** Infinite Scoll ***/
+
+.infinite-scroll .hoot-jetpack-style .pagination.loop-pagination,
+.infinite-scroll .hoot-jetpack-style .pagination.navigation { display: none; }
+.hoot-jetpack-style {
+	#infinite-handle { clear: both; }
+	#infinite-handle span {
+		button { text-transform: uppercase; }
+		padding: 6px 23px 8px;
+		font-size: 0.8em;
+		line-height: 1.8em;
+		border: solid 1px rgba(0, 0, 0, 0.15);
+		.box-shadow( inset 0 -2px 0 0 rgba(0,0,0,0.33); );
+	}
+}
+/* Disable for woocommerce shop/archive */
+.infinite-scroll.woocommerce #infinite-handle { display: none !important; }
+.infinite-scroll .woocommerce-pagination { display: block; }
+
+/*** Share ***/
+
+.hoot-jetpack-style {
+	.entry-content .sharedaddy {
+		border-top: solid 1px @bgHighlightToneColor;
+		& > div { margin-top: @bigVerticalMargin; } // 1em;
+	}
+	div.product .sharedaddy { // singular product page
+		& > div { margin-top: @bigVerticalMargin; } // 1em;
+	}
+	.frontpage-area .entry-content .sharedaddy { // Page content on Frontpage
+		display: none;
+	}
+	.sharedaddy .sd-title {
+		font-family: inherit;
+		text-transform: uppercase;
+		.opacity(70);
+		&:before { display: none; }
+		margin-bottom: 0;
+	}
+	.sd-content ul li {
+		display: inline-block;
+		iframe { margin: 0; }
+	}
+}
+/* Disable for content block widget */
+.content-block-text .sharedaddy { display: none; }
+
+/*** Contact Form ***/
+
+.hoot-jetpack-style {
+	.contact-form.commentsblock {
+		// & > div {
+		// 	width: 28%;
+		// 	margin: 1em 5% 1em 0;
+		// 	float: left;
+		// }
+		// & > div:nth-of-type(3n+1){ clear: both; }
+		// & > div.full { // wrap a field in .full to make full width
+		// 	width: 94%;
+		// 	float: none;
+		// 	clear: both;
+		// }
+		// & > .full > div { width: 100%; margin-right: 0; }
+		// label {
+		// 	font-weight: normal;
+		// }
+		label { font-weight: normal; }
+		.grunion-field-label {
+			text-transform: uppercase;
+			font-weight: bold;
+			// font-size: 0.8em;
+			span {
+				// font-weight: normal;
+				color: #af2c20;
+			}
+		}
+		// input[type="text"], input[type="email"], textarea, select { width: 100%; }
+		// input[type="checkbox"],
+		// input[type="radio"] { width: auto; }
+		.grunion-checkbox-multiple-label { display: inline-block; }
+		.grunion-checkbox-multiple-label + .clear-form { display: inline-block; }
+		.grunion-radio-label { display: inline-block; }
+		.grunion-radio-label + .clear-form { display: inline-block; }
+		p.contact-submit {
+			.clearfix();
+			clear: both;
+			float: none;
+			width: 100%;
+			margin: 0;
+			input { width: auto; }
+		}
+	}
+}
+
+/*** Responsive Jetpack ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.hoot-jetpack-style .contact-form.commentsblock > div,
+	.hoot-jetpack-style .contact-form.commentsblock > div:last-of-type {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+	}
+}
+
+
+/************* Page Builder *************/
+
+.so-panel {
+	&.widget { margin-top: 0; }
+	.content-blocks-widget, .vcards-widget, .number-blocks-widget { margin: 0; }
+	.topborder-shadow, .topborder-line {
+		.content-blocks-widget, .vcards-widget, .number-blocks-widget { margin-top: 3em; }
+	}
+	.bottomborder-shadow, .bottomborder-line {
+		.content-blocks-widget, .vcards-widget, .number-blocks-widget { margin-bottom: 3em; }
+	}
+}
+
+
+/************* Elementor *************/
+.elementor p,
+.elementor h1, .elementor h2, .elementor h3, .elementor h4, .elementor h5, .elementor h6, .elementor .title {
+	margin-top: 0;
+}
+
+
+/************* Login Modal / Popups *************/
+
+/*** WooCommerce Login Popup and Shortcodes ***/
+
+.woo-login-popup-sc-left { .box-sizing( border-box ); }
+
+/*** AJAX Login and Registration modal popup ***/
+
+.lrm-user-modal-container .lrm-switcher a { color: #555; background: rgba(0,0,0,0.2); }
+.lrm-form a.button, .lrm-form button, .lrm-form button[type=submit], .lrm-form #buddypress input[type=submit], .lrm-form input[type=submit] {
+	background: @accentColor; color: @accentFontColor;
+	.border-radius( 0px );
+	.box-shadow( inset 0 4px 0 0 rgba(0,0,0,0.33); );
+	&:hover { .box-shadow( inset 0 4px 0 0 rgba(0,0,0,0.33); ); }
+}
+
+
+/************* Polylang *************/
+
+.pll-parent-menu-item img { vertical-align: unset; }
+
+
+/************* Max Mega Menu *************/
+
+.mega-menu-primary .menu-primary > .menu-toggle { display: none; }
+// .mega-menu-secondary .menu-secondary > .menu-toggle { display: none; }

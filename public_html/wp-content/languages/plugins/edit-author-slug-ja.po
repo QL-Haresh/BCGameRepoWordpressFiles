@@ -1,0 +1,252 @@
+# Translation of Plugins - Edit Author Slug - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Edit Author Slug - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-08-12 13:51:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Edit Author Slug - Stable (latest release)\n"
+
+#. translators: 1: <code>username</code>, 2: <code>username</code>
+#: includes/admin.php:819 includes/admin.php:897
+msgid "Your iThemes settings suggest you don't want the %1$s being used as an author slug. Leaving it set to %2$s will still work, but you may wish to change to something different."
+msgstr "iThemesの設定では、%1$s を作成者のスラッグとして使用しないよう指定されています。%2$s に設定したままでも機能しますが、別のものに変更することをおすすめします。"
+
+#: includes/admin.php:616
+msgid "Demo:"
+msgstr "デモ:"
+
+#: includes/admin.php:432
+msgid "This also applies to other users."
+msgstr "これは他のユーザーにも適用されます。"
+
+#: includes/admin.php:432
+msgid "You can customize your own author slug by visiting your profile page. "
+msgstr "プロフィールページから独自の投稿者スラッグをカスタマイズできます。"
+
+#: includes/admin.php:411
+msgctxt "Settings menu item"
+msgid "Edit Author Slug"
+msgstr "投稿者スラッグ編集"
+
+#: includes/admin.php:73
+msgctxt "Plugin settings page heading"
+msgid "Edit Author Slug"
+msgstr "投稿者スラッグ編集"
+
+#: includes/admin.php:964
+msgid "hash"
+msgstr "ハッシュ"
+
+#: includes/admin.php:963
+msgid "userid"
+msgstr "userid"
+
+#: includes/admin.php:248
+msgid "<strong>ERROR</strong>: Your iThemes settings prevent your author slug from being the same as your username."
+msgstr "<strong>エラー</strong>: iThemesの設定により、投稿者スラッグがユーザー名と同じにならないようになっています。"
+
+#: includes/classes/class-ba-edit-author-slug.php:208
+msgid "Use class constant, BA_Edit_Author_Slug::DB_VERSION, instead."
+msgstr "代わりにクラス定数 BA_Edit_Author_Slug::DB_VERSION を使ってください。"
+
+#: includes/classes/class-ba-edit-author-slug.php:201
+msgid "Use class constant, BA_Edit_Author_Slug::VERSION, instead."
+msgstr "代わりにクラス定数 BA_Edit_Author_Slug:: VERSION を使ってください。"
+
+#. translators: 1: rewrite tag, 2: rewrite tag demo usage, 3: demo URL using
+#. rewrite tag
+#: includes/admin.php:666
+msgid "Use the %1$s rewrite tag to customize the role-based author base. If you set the author base to \"%2$s\", the resulting author structure will be something like \"%3$s\"."
+msgstr "役割に基づく投稿者ベースをカスタマイズするには、 %1$s 上書きタグを使用します。投稿者ベースを \"%2$s\"に設定した場合、投稿者の構造は \"%3$s\"のようになります。"
+
+#: includes/admin.php:660
+msgid "Set user's Author Base according to their role."
+msgstr "権限グループに基づいてユーザーの投稿者ベースを設定する。"
+
+#: includes/admin.php:644
+msgid "Remove the \"front\" portion of the author permalink structure."
+msgstr "投稿者パーマリンク構造の「フロント」部分を削除する。"
+
+#: includes/admin.php:479
+msgid "Remove Front"
+msgstr "フロントを削除"
+
+#. Author URI of the plugin
+msgid "https://github.com/thebrandonallen/"
+msgstr "https://github.com/thebrandonallen/"
+
+#. Author of the plugin
+msgid "Brandon Allen"
+msgstr "Brandon Allen"
+
+#. Description of the plugin
+msgid "Allows an Admin (or capable user) to edit the author slug of a user, and change the Author Base. <em>i.e. - (WordPress default structure) http://example.com/author/username/ (Plugin allows) http://example.com/ninja/master-ninja/</em>"
+msgstr "管理者(または資格のあるユーザー)にユーザーの author slug を編集したり Author Base を変更することを許可します。<em>すなわち、- (WordPress のデフォルトの構成) http://example.com/author/username/ (プラグインが許可) http://example.com/ninja/master-ninja/</em>"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/thebrandonallen/edit-author-slug/"
+msgstr "https://github.com/thebrandonallen/edit-author-slug/"
+
+#. translators: Updated author slugs count.
+#: includes/functions.php:259
+msgid "%d user author slug updated."
+msgid_plural "%d user author slugs updated."
+msgstr[0] "%dユーザーの投稿者スラッグを更新しました。"
+
+#: includes/admin.php:929
+msgid "Settings"
+msgstr "設定"
+
+#: includes/admin.php:885
+msgid "Default bulk update author slug options"
+msgstr "デフォルト投稿者スラッグ一括更新オプション"
+
+#: includes/admin.php:857
+msgid "Update all users according to the below Author Slug setting. This will only be run after clicking \"Save Changes\"."
+msgstr "すべてのユーザーを以下の投稿者スラッグ設定に従って更新します。 これは、”変更を保存” をクリックした後にのみ実行されます。"
+
+#: includes/admin.php:840
+msgid "Update all users at once based on the specified Author Slug structure."
+msgstr "指定された投稿者スラッグ構造に基づいてすべてのユーザーを一括更新する。"
+
+#: includes/admin.php:807
+msgid "Default author slug options"
+msgstr "デフォルトの投稿者スラッグオプション"
+
+#: includes/admin.php:962
+msgid "lastname-firstname"
+msgstr "lastname-firstname"
+
+#: includes/admin.php:961
+msgid "firstname-lastname"
+msgstr "firstname-lastname"
+
+#: includes/admin.php:960
+msgid "lastname"
+msgstr "lastname"
+
+#: includes/admin.php:959
+msgid "firstname"
+msgstr "firstname"
+
+#: includes/admin.php:958
+msgid "displayname"
+msgstr "displayname"
+
+#: includes/admin.php:957
+msgid "nickname"
+msgstr "nickname"
+
+#: includes/admin.php:956
+msgid "username (Default)"
+msgstr "username (デフォルト)"
+
+#: includes/admin.php:779
+msgid "Automatically update Author Slug when a user updates their profile."
+msgstr "ユーザーがプロフィールを変更したら自動的に Author Slug を更新します。"
+
+#: includes/admin.php:614
+msgid "Defaults to 'author'"
+msgstr "デフォルトの 'author'"
+
+#: includes/admin.php:591
+msgid "This could have SEO repercussions if users update their profiles frequently, and it will override any manual editing of the Author Slug you may have previously completed."
+msgstr "ユーザーが自分のプロフィールを頻繁に更新するとSEOに影響を及ぼすことがあり、また管理者が手動で編集を完了した Author Slug を上書きしてしまいます。"
+
+#: includes/admin.php:591
+msgid "Allow Author Slugs to be automatically updated, and set the default Author Slug structure for users. Automatic updating will only occur when a user can't edit Author Slugs on their own."
+msgstr "投稿者スラッグの自動更新を許可し、ユーザー向けにデフォルト投稿者スラッグ構造を設定します。自動更新は、ユーザーが独自に投稿者スラッグを編集できない場合にのみ発生します。"
+
+#: includes/admin.php:578
+msgid "Change your author base to something more fun!"
+msgstr "author base をもっといいものに変更してください！"
+
+#: includes/admin.php:549
+msgid "Bulk Update"
+msgstr "一括更新"
+
+#: includes/admin.php:541
+msgid "Bulk Update Author Slugs"
+msgstr "投稿者スラッグを一括更新"
+
+#: includes/admin.php:528 includes/admin.php:559
+msgid "Author Slug Structure"
+msgstr "投稿者スラッグ構造"
+
+#: includes/admin.php:518
+msgid "Automatically Update"
+msgstr "自動更新"
+
+#: includes/admin.php:510
+msgid "Automatic Author Slug Creation"
+msgstr "Author Slug の自動生成"
+
+#: includes/admin.php:500
+msgid "Role Slugs"
+msgstr "権限グループスラッグ"
+
+#: includes/admin.php:490
+msgid "Role-Based Author Base"
+msgstr "役割を元にした Author Base"
+
+#: includes/admin.php:457 includes/admin.php:465
+msgid "Author Base"
+msgstr "投稿者ベース"
+
+#: includes/admin.php:410 includes/admin.php:429
+msgid "Edit Author Slug Settings"
+msgstr "Edit Author Slug 設定"
+
+#. translators: 1: author slug
+#: includes/admin.php:264
+msgid "<strong>ERROR</strong>: The author slug, %1$s, already exists. Please try something different."
+msgstr "<strong>エラー</strong>: author slug, %1$s, は既に存在します。違うものを試してください。"
+
+#: includes/admin.php:232
+msgid "<strong>ERROR</strong>: An author slug may not be longer than 50 characters."
+msgstr "<strong>エラー</strong>: author slug は50文字を超えてはいけません。"
+
+#: includes/admin.php:223
+msgid "<strong>ERROR</strong>: That author slug appears to be invalid. Please try something different."
+msgstr "<strong>エラー</strong>: その author slug は無効のようです。違うものを試してください。"
+
+#: includes/admin.php:214
+msgid "<strong>ERROR</strong>: An author slug can only contain alphanumeric characters, underscores (_) and dashes (-)."
+msgstr "<strong>エラー</strong>: author slug には英数字、アンダースコア(_) 、ダッシュ(-)しか含めることができません。"
+
+#: includes/admin.php:169
+msgid "<strong>ERROR</strong>: An author slug cannot be blank. Please try again."
+msgstr "<strong>エラー</strong>: author slug は空白にできません。"
+
+#: includes/admin.php:102
+msgid "Custom author slug:"
+msgstr "カスタム投稿者スラッグ:"
+
+#: includes/admin.php:100
+msgid "Enter a custom author slug in the following field"
+msgstr "次の欄にカスタム投稿者スラッグを入力してください"
+
+#: includes/admin.php:99
+msgid "Custom:"
+msgstr "カスタム設定:"
+
+#: includes/admin.php:77 includes/admin.php:79 includes/admin.php:324
+msgid "Author Slug"
+msgstr "投稿者スラッグ"
+
+#: includes/admin.php:74
+msgid "ie. - 'user-name', 'firstname-lastname', or 'master-ninja'"
+msgstr "例: 'user-name'、'firstname-lastname'、または 'master-ninja'"
+
+#: includes/admin.php:74
+msgid "Choose an Author Slug based on the above profile information, or create your own."
+msgstr "上記のプロフィール情報を元に Author Slug を選ぶか、自分で作成してください。"
+
+#. Plugin Name of the plugin
+msgid "Edit Author Slug"
+msgstr "Edit Author Slug"

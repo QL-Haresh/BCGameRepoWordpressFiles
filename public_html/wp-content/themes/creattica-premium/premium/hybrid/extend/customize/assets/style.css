@@ -1,0 +1,61 @@
+/**
+ * HybridExtend Customizer
+ * ========================================================
+ */
+
+
+/*** Typography Control ***/
+
+.customize-control .button.hybridextend-typo-button-wrap { padding: 0 30px 0 0; width: 100%; }
+.hybridextend-customize-control-groupstart .hybridextend-typo-button-wrap.hybridextend-flypanel-button:after { display: none; }
+.hybridextend-typo-button { display: table; width: 100%; }
+.hybridextend-typo-button-unit { display: table-cell; text-align: center; vertical-align: middle; height: 26px; line-height: 26px; border-right: solid 1px #ccc; }
+.hybridextend-typo-button-face { max-width: 85px; overflow: hidden; padding: 0 8px; text-overflow: ellipsis; }
+.hybridextend-typo-button-size { padding: 0 8px; }
+.hybridextend-typo-button-style { width: 60px; background: no-repeat url(font-styles.png); }
+.hybridextend-typo-button-color { width: 30px; display: block; position: absolute; right: 0; top: 0; border: none; }
+/* Style preview */
+.hybridextend-typo-button-style                                        { background-position: 0 0; }
+.hybridextend-typo-button-style[data-style="italic"]                   { background-position: 0 -25px; }
+.hybridextend-typo-button-style[data-style="bold"]                     { background-position: 0 -50px; }
+.hybridextend-typo-button-style[data-style="bold italic"]              { background-position: 0 -75px; }
+.hybridextend-typo-button-style[data-style="semibold"]                 { background-position: 0 -50px; }
+.hybridextend-typo-button-style[data-style="semibold italic"]          { background-position: 0 -75px; }
+.hybridextend-typo-button-style[data-style="lighter"]                  { background-position: 0 -100px; }
+.hybridextend-typo-button-style[data-style="lighter italic"]           { background-position: 0 -125px; }
+.hybridextend-typo-button-style[data-style="uppercase"]                { background-position: 0 -150px; }
+.hybridextend-typo-button-style[data-style="uppercase italic"]         { background-position: 0 -175px; }
+.hybridextend-typo-button-style[data-style="uppercase bold"]           { background-position: 0 -200px; }
+.hybridextend-typo-button-style[data-style="uppercase bold italic"]    { background-position: 0 -225px; }
+.hybridextend-typo-button-style[data-style="uppercase semibold"]       { background-position: 0 -200px; }
+.hybridextend-typo-button-style[data-style="uppercase semibold italic"]{ background-position: 0 -225px; }
+.hybridextend-typo-button-style[data-style="uppercase lighter"]        { background-position: 0 -250px; }
+.hybridextend-typo-button-style[data-style="uppercase lighter italic"] { background-position: 0 -275px; }
+
+/** Fontface Control **/
+
+.customize-control-fontface {}
+.hybridextend-customize-control-fontface {}
+.hybridextend-customize-control-fontface-picked { width: 100%; line-height: 28px; height: 28px; vertical-align: middle; font-size: 14px; border: 1px solid #ddd; outline: 0; position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	        box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	-webkit-transition: .05s border-color ease-in-out;
+	        transition: .05s border-color ease-in-out; }
+.hybridextend-customize-control-fontface-picked:after { content: ' '; display: block; position: absolute; top: 50%; right: 8px; width: 0; height: 0; margin-top: -2px; border-width: 6px 3px 0; border-color: #000 transparent transparent; border-style: solid; }
+.hybridextend-customize-control-fontface-picked.active { border-color: #5b9dd9;
+	-webkit-box-shadow: 0 0 2px rgba(30,140,190,.8);
+	        box-shadow: 0 0 2px rgba(30,140,190,.8); }
+.hybridextend-customize-control-fontface-picked > div { cursor: default; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; height: 100%; padding: 0 16px 0 8px; }
+
+/** Fontface Picker **/
+
+.hybridextend-fontface-list { font-size: 13px; line-height: 16px; border: 1px solid #7a9cd3; display: none; }
+.hybridextend-fontface-list h4 { text-transform: uppercase; text-align: center; padding: 14px; margin: 0; background-color: #eee; color: #888; }
+.hybridextend-fontface-listitem { height: 30px; cursor: pointer; border-bottom: 1px solid #ddd; line-height: 30px; padding: 5px 8px; overflow: hidden; position: relative; }
+.hybridextend-fontface-listitem:hover,
+.hybridextend-fontface-listitem.selected { background-color: #2ea2cc; color: #fff; }
+.hybridextend-fontface-listitem span {}
+.hybridextend-fontface-listitem .hybridextend-fontface-preview { display: block; padding-left: 5px; height: 30px; width: 125px; border: none; background: #fff url(fontlist-google.png); background-repeat: no-repeat; position: absolute; top: 5px; right: 5px; }
+.hybridextend-fontface-listitem .hybridextend-fontface-preview.hybridextend-fontface-websafe { background-image: url(fonts-websafe.png); background-repeat: no-repeat; }

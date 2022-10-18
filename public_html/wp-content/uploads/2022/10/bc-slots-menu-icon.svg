@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-slots-menu-image</title>
+	<defs>
+		<image  width="44" height="34" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAiCAMAAAATUMtDAAAAAXNSR0IB2cksfwAAAF1QTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6OY6UdQAAAB90Uk5TABiTzGs1Ez8O/uZCmf+aY5jXsCjr/d71+c1Kx9LKy+UPk0cAAAGLSURBVHicjZSJloMgDEVj0ypYEVdc6/9/5gTiLnrmnSI2vTzSBAVYFbzQozf45GcRXz74hvV6f+5YxOD/xhfrMBL3LOKBjWT8fYK/cbKyIlbp+wl+pypdYK2UzuZ4bkeen2Aiwtm4kLJkOFeqqmpFqitjTNPwqiyUcrYWbdvC7OtAB/M0bwEWcSratoDOxrpcHWUc2qEgRjMr2yLsnE5wgxzuAoItHSkpVQG0vGNnSraxSdAlp5D7lFqSBKTWIp17YojFjgvSkPGiUlsqgpiucoFxLZqpVW1OcArWX+rgWFiyJXj73rs0EojdJAbEYf3NuMJV9naYnRkeeTr41gxvq4PE7Q9uzQjDDm64LVvKKBxMHR/PsDl0hDs4uu3pLNubPVxd4MHCfEpDu0OPw6IVXiM/4CSsaJnuf6tyw8I1Yis3LueZ9tjBV/WJLQUseYwlPkhsxs46nB5Eh63cPbFplN0bZ5EOj2+Dh8f7+pKBWza7shBME048jgo9MHz8/86TBOMe3aCLxG4c9QfR+DDMem+XrQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="14" y="20"/>
+</svg>

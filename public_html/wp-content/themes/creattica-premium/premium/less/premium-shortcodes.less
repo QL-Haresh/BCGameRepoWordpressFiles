@@ -1,0 +1,335 @@
+// Color Schemes
+// --------------------------------------------------
+@style_white_background:	#f2f2f2;
+@style_white_text:			#888888;
+@style_black_background:	#444444;
+@style_black_text:			#ffffff;
+@style_brown_background:	#986736;
+@style_brown_text:			#ffffff;
+@style_blue_background:		#3b86b0;
+@style_blue_text:			#ffffff;
+@style_cyan_background:		#40b7c2;
+@style_cyan_text:			#ffffff;
+@style_green_background:	#3bb064;
+@style_green_text:			#ffffff;
+@style_yellow_background:	#dbd932;
+@style_yellow_text:			#6d6a17;
+@style_amber_background:	#e4910e;
+@style_amber_text:			#ffffff;
+@style_orange_background:	#ec750c;
+@style_orange_text:			#ffffff;
+@style_red_background:		#c73535;
+@style_red_text:			#ffffff;
+@style_pink_background:		#eb4992;
+@style_pink_text:			#ffffff;
+
+@style_whitelight_background:	#f2f2f2;
+@style_whitelight_text:			#888888;
+@style_blacklight_background:	#444444;
+@style_blacklight_text:			#ffffff;
+@style_brownlight_background:	#f5e7d8;
+@style_brownlight_text:			#986736;
+@style_bluelight_background:	#e8f0fa;
+@style_bluelight_text:			#4671a3;
+@style_cyanlight_background:	#e8f8fa;
+@style_cyanlight_text:			#469ba3;
+@style_greenlight_background:	#eefae8;
+@style_greenlight_text:			#728754;
+@style_yellowlight_background:	#fcfbd9;
+@style_yellowlight_text:		#a69021;
+@style_amberlight_background:	#faeed4;
+@style_amberlight_text:			#b28929;
+@style_orangelight_background:	#ffe0bc;
+@style_orangelight_text:		#c8640d;
+@style_redlight_background:		#faece8;
+@style_redlight_text:			#af2c20;
+@style_pinklight_background:	#fae8f4;
+@style_pinklight_text:			#c2519b;
+
+
+/************* Shortcodes *************/
+
+/*** Color Schemes ***/
+.style-white, .shortcode-button.style-white{
+	background: @style_white_background;
+	color: @style_white_text;
+}
+.shortcode-button.style-white:hover{
+	background: @style_white_background - #111;
+	color: @style_white_text;
+}
+.style-black, .shortcode-button.style-black{
+	background: @style_black_background;
+	color: @style_black_text;
+}
+.shortcode-button.style-black:hover{
+	background: @style_black_background - #222;
+	color: @style_black_text;
+}
+.style-brown, .shortcode-button.style-brown{
+	background: @style_brown_background;
+	color: @style_brown_text;
+}
+.shortcode-button.style-brown:hover{
+	background: @style_brown_background - #222;
+	color: @style_brown_text;
+}
+.style-blue, .shortcode-button.style-blue{
+	background: @style_blue_background;
+	color: @style_blue_text;
+}
+.shortcode-button.style-blue:hover{
+	background: @style_blue_background - #222;
+	color: @style_blue_text;
+}
+.style-cyan, .shortcode-button.style-cyan{
+	background: @style_cyan_background;
+	color: @style_cyan_text;
+}
+.shortcode-button.style-cyan:hover{
+	background: @style_cyan_background - #222;
+	color: @style_cyan_text;
+}
+.style-green, .shortcode-button.style-green{
+	background: @style_green_background;
+	color: @style_green_text;
+}
+.shortcode-button.style-green:hover{
+	background: @style_green_background - #222;
+	color: @style_green_text;
+}
+.style-yellow, .shortcode-button.style-yellow{
+	background: @style_yellow_background;
+	color: @style_yellow_text;
+}
+.shortcode-button.style-yellow:hover{
+	background: @style_yellow_background - #222;
+	color: @style_yellow_text;
+}
+.style-amber, .shortcode-button.style-amber{
+	background: @style_amber_background;
+	color: @style_amber_text;
+}
+.shortcode-button.style-amber:hover{
+	background: @style_amber_background - #222;
+	color: @style_amber_text;
+}
+.style-orange, .shortcode-button.style-orange{
+	background: @style_orange_background;
+	color: @style_orange_text;
+}
+.shortcode-button.style-orange:hover{
+	background: @style_orange_background - #222;
+	color: @style_orange_text;
+}
+.style-red, .shortcode-button.style-red{
+	background: @style_red_background;
+	color: @style_red_text;
+}
+.shortcode-button.style-red:hover{
+	background: @style_red_background - #222;
+	color: @style_red_text;
+}
+.style-pink, .shortcode-button.style-pink{
+	background: @style_pink_background;
+	color: @style_pink_text;
+}
+.shortcode-button.style-pink:hover{
+	background: @style_pink_background - #222;
+	color: @style_pink_text;
+}
+
+.style-accent, .shortcode-button.style-accent,
+.style-accentlight {
+	background: @accentColor;
+	color: @accentFontColor;
+}
+.shortcode-button.style-accent:hover {
+	background: @accentColor - #111;
+	color: @accentFontColor;
+}
+.style-highlight, .style-highlightlight { background: @bgHighlightColor; }
+
+.style-whitelight {
+	background: @style_whitelight_background;
+	color: @style_whitelight_text;
+}
+.style-blacklight {
+	background: @style_blacklight_background;
+	color: @style_blacklight_text;
+}
+.style-brownlight {
+	background: @style_brownlight_background;
+	color: @style_brownlight_text;
+}
+.style-bluelight {
+	background: @style_bluelight_background;
+	color: @style_bluelight_text;
+}
+.style-cyanlight {
+	background: @style_cyanlight_background;
+	color: @style_cyanlight_text;
+}
+.style-greenlight {
+	background: @style_greenlight_background;
+	color: @style_greenlight_text;
+}
+.style-yellowlight {
+	background: @style_yellowlight_background;
+	color: @style_yellowlight_text;
+}
+.style-amberlight {
+	background: @style_amberlight_background;
+	color: @style_amberlight_text;
+}
+.style-orangelight {
+	background: @style_orangelight_background;
+	color: @style_orangelight_text;
+}
+.style-redlight {
+	background: @style_redlight_background;
+	color: @style_redlight_text;
+}
+.style-pinklight {
+	background: @style_pinklight_background;
+	color: @style_pinklight_text;
+}
+
+/*** Buttons ***/
+
+.shortcode-button { border: none; }
+
+/*** Icon Lists ***/
+.main .fa-ul {
+	margin-left: 2.14285714em;
+	list-style-type: none;
+}
+.fa-li {
+	line-height: @baseLineHeight;
+	top: 0;
+}
+
+/*** Box ***/
+.shortcode-box { padding: 0 15px; }
+.shortcode-box-icon {
+	padding-right: 15px;
+	font-size: 1.5em;
+	width: 1.5em;
+	text-align: center;
+}
+.shortcode-box-content { padding: @smallVerticalMargin 0; }
+
+/*** Dropcap ***/
+.shortcode-dropcap {
+	display: block;
+	float: left;
+	margin: 0 8px 0 0;
+	font-size: 3.2em;
+	line-height: 1em;
+}
+
+/*** Highlight ***/
+.shortcode-highlight { padding: 2px 5px; }
+
+/*** Toggle ***/
+.shortcode-toggle { margin: @verticalMargin 0; }
+.shortcode-toggle-head {
+	background: @bgHighlightColor;
+	border: solid 1px @bgHighlightToneColor;
+	cursor: pointer;
+	padding: 6px 15px 6px 30px;
+	position: relative;
+	.transition( color 0.1s linear, background 0.2s linear; );
+}
+.shortcode-toggle-head:hover, .shortcode-toggle-active { } // background: @bgHighlightToneColor;
+.shortcode-toggle-head i {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	font-size: 0.6em;
+	line-height: 1em;
+	margin-top: -0.3em;
+}
+.shortcode-toggle-box {
+	border: solid 1px @bgHighlightToneColor;
+	border-top: none;
+	margin: 0;
+	padding: 13px 15px;
+	p:first-child { margin-top: 0; }
+	p:last-child { margin-bottom: 0; }
+}
+
+/*** Tabset ***/
+.shortcode-tabset { margin: @verticalMargin 0; }
+#page-wrapper ul.shortcode-tabset-nav {
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	bottom: -1px;
+	// font-size: 1.2em;
+	// line-height: 1.69em;
+	li {
+		float: left;
+		margin: 0 5px 0 0;
+		border: solid 1px @bgHighlightToneColor;
+		background: @bgHighlightColor;
+		padding: 8px 20px;
+		text-align: center;
+		cursor: pointer;
+	}
+	li.current {
+		background: none;
+		border-bottom-color: @bodyBackground;
+	}
+}
+.shortcode-tabset-box {
+	padding: 13px 15px;
+	border: solid 1px @bgHighlightToneColor;
+	> div { display: none; }
+	> div.current { display: block; }
+	p:first-child { margin-top: 0; }
+	p:last-child { margin-bottom: 0; }
+}
+
+/*** Divider ***/
+.shortcode-divider {
+	margin: @verticalMargin 0;
+	height: 1px;
+	.clearfix();
+	position: relative;
+	a {
+		position: absolute;
+		right: 0;
+		top: -0.8em;
+		padding: 0px 5px;
+		font-size: 0.7em;
+		line-height: 1.6em;
+		text-transform: uppercase;
+	}
+	a:hover {
+		background: inherit;
+		color: inherit;
+	}
+}
+
+/*** Column ***/
+.shortcode-column { margin: @verticalMargin 0; padding-left: 0; }
+.shortcode-column.last { padding-right: 0; }
+
+/*** Content Block ***/
+.shortcode-content-block .content-blocks-widget, .shortcode-content-block .content-blocks-widget .clearfix { margin: @bigVerticalMargin 0; }
+
+/*** Responsive Shortcodes ***/
+
+@media only screen and (max-width: @breakPoint) {
+
+	.shortcode-box { display: table; }
+	.shortcode-box-icon, .shortcode-box-content { display: table-cell; }
+
+	[class*="hcolumn-"].shortcode-column {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}

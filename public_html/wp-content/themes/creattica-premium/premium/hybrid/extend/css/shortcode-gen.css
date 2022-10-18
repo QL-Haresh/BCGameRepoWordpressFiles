@@ -1,0 +1,60 @@
+/**
+ * Hoot Admin Shortcodes
+ * ========================================================
+ */
+
+/*** Button ***/
+#hoot-insert-shortcode {}
+.hoot-sc-generator-button {}
+
+/*** Wrapper ***/
+#hoot-sc-generator-wrap {}
+#hoot-sc-generator {}
+
+/*** Layout ***/
+#hoot-sc-generator { -ms-box-orient: horizontal; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; align-items: stretch; }
+#hoot-sc-generator .separator { height: 0; margin: 12px 20px; padding: 0; border-top: 1px solid #ddd; }
+
+/*** Menu ***/
+.hoot-sc-generator-menu { border-right: solid 1px #ccc; width: 200px; }
+.hoot-sc-generator-menu h4 { font-size: 1em; margin: 0; padding: 18px 12px; border-bottom: 1px solid #ddd; }
+.hoot-sc-generator-list {}
+.hoot-sc-generator-list ul { margin: 0; padding: 10px 0; box-sizing: border-box; }
+.hoot-sc-generator-list li { margin-bottom: 0; }
+.hoot-sc-generator-list li.subhead { font-weight: bold; padding: 6px 12px; }
+.hoot-sc-generator-list li a { padding: 6px 20px; margin: 0; line-height: 18px; font-size: 14px; display: block; text-decoration: none; }
+.hoot-sc-generator-list li a:focus { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.hoot-sc-generator-list li a.current,
+.hoot-sc-generator-list li a:hover { background: #e6e6e6; background: rgba( 0, 0, 0, 0.04 ); }
+
+/*** Content ***/
+.hoot-sc-generator-content-wrap { width: 500px; box-sizing: border-box; padding: 10px 20px; }
+.hoot-sc-generator-content {}
+.hoot-sc-generator-content h2 { margin: 0; padding: 10px 0 16px; border-bottom: solid 1px #eee; }
+.hoot-sc-generator-content-inner { padding: 1px 15px 1px 1px; box-sizing: border-box; }
+.hoot-sc-section { display: none; }
+.hoot-sc-section:first-child { display: block; }
+
+/*** Hootoptions Override ***/
+.hoot-sc-generator-content .hootoptions .section { padding: 5px 0 30px; }
+.hoot-sc-generator-content .hootoptions .section:last-child { border-bottom: none; }
+.hoot-sc-generator-content .hootoptions .heading { margin: 1.33em 0; }
+.hoot-sc-generator-content .hootoptions .section .controls { float: none; width: auto; }
+.hoot-sc-generator-content .hootoptions .section .explain { float: none; max-width: none; padding-right: 15px; }
+.hoot-sc-generator-content .hootoptions .hoot-of-group .section { padding: 0 14px }
+
+/*** Footer Toolbar ***/
+.hoot-sc-generator-toolbar { border-left: 1px solid #ddd; box-sizing: border-box; padding-left: 20px; }
+.hoot-sc-generator-toolbar-inner { position: fixed; }
+.button.hoot-sc-generator-insert { margin: 15px 15px 15px 0; }
+.hoot-sc-generator-toolbar textarea { width: 300px; display: block; }
+
+@media only screen and (max-width: 1279px) {
+	#hoot-sc-generator { display: block; }
+	.hoot-sc-generator-menu { width: auto; border-right: none; border-bottom: solid 1px #aaa; }
+	.hoot-sc-generator-list li { display: inline-block; }
+	.hoot-sc-generator-list li.subhead { display: block; padding-left: 20px; }
+	.hoot-sc-generator-content-wrap { width: auto; }
+	.hoot-sc-generator-toolbar { border-left: none; border-top: solid 1px #aaa; }
+	.hoot-sc-generator-toolbar-inner { position: relative; }
+}

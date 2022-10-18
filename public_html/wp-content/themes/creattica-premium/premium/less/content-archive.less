@@ -1,0 +1,188 @@
+/**
+ * Main #Content for Index (Archive / Blog List)
+ * ========================================================
+ */
+
+// Common styles for Post Page (single) and single Post in an Archive list is in content.less
+/** Use 'entry-grid' classes to style posts in archive lists specifically **/
+
+
+/************* Archive List Post Entry *************/
+
+/*** Common Styles ***/
+
+.entry-grid-featured-img {
+	position: relative;
+	z-index: 1;
+}
+
+/* Sticky */
+.entry-sticky-tag { display: none; /*Hide it when not actually displayed as 'stuck' at top*/ }
+.sticky .entry-sticky-tag {
+	float: left;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 0 4px; top: 7px; // padding: 7px 10px; // same as entry-byline
+	margin-right: 10px;
+	text-transform: uppercase;
+	.small-font();
+	text-align: center;
+}
+
+/* Entry Grid */
+.entry-grid {
+	margin-bottom: @widgetMargin;
+	min-width: inherit;
+	// border-bottom: solid 1px @bgHighlightToneColor;
+}
+.entry-grid-content {
+	// padding-left: 0;
+	// padding-right: 0;
+	padding: 0 0 @widgetMargin;
+	.entry-title {
+		font-size: @h4FontSize;
+		margin: 0;
+		a { color: inherit; }
+	}
+	.entry-summary {
+		// p:first-child { margin-top: 1em; }
+	}
+}
+
+/*** Archive Big Post entry ***/
+
+.archive-big {
+	// &.sticky .entry-sticky-tag { margin-top: 9px; } // same as entry-byline + 1px for border
+}
+.archive-big, .archive-medium, .archive-small {
+	.entry-grid { border-bottom: solid 1px @bgHighlightToneColor; }
+	&.has-post-thumbnail { padding-top: 1em; }
+	&.has-post-thumbnail:first-child { padding-top: 5px; }
+}
+.archive-big:last-child, .archive-medium:last-child, .archive-small:last-child {
+	.entry-grid { margin-bottom: 0; border-bottom: none; }
+}
+
+/*** Archive Medium and Small Post entry ***/
+
+.archive-medium, .archive-small {
+	.entry-grid { }
+	.entry-content-featured-img { margin: 0 @bigVerticalMargin 10px 0; }
+	.entry-summary p:first-child { margin-top: 1em; }
+	.entry-byline { display: table; }
+	// &.sticky .entry-sticky-tag { margin-top: 1px; } // same as entry-byline + 1px for border
+}
+
+/*** Archive Mosaic (2/3/4 columns) Post entry ***/
+
+#content .archive-mosaic { padding: 1em @hgridSpanSmallGutter 0; }
+.archive-mosaic {
+	text-align: center;
+
+	/* Entry Grid */
+	.entry-grid {
+		// padding-bottom: 0;
+		margin-bottom: @widgetMargin;
+		border: solid 1px @bgHighlightToneColor;
+	}
+	.entry-content-featured-img { margin: 0 auto; }
+	.entry-grid-content {
+		padding: @bigVerticalMargin 1em;
+		padding-bottom: 0;
+	}
+	.entry-title { font-size: @h6FontSize; }
+	.entry-summary {
+		font-size: 0.93333333em; // 15px => 14px // @baseFontSizeMedium:13px
+		// p:first-child { margin-top: 0; }
+		p { margin: 1em 0; }
+		.more-link { margin-top: 1em; }
+	}
+
+	/* Sub Content */
+	.mosaic-sub {
+		background: @bgHighlightColor;
+		border-top: solid 1px @bgHighlightToneColor;
+		margin: 0 -1em;
+		line-height: 1.4em;
+	}
+
+	/* Sticky */
+	&.sticky .entry-sticky-tag {
+		float: none;
+		top: 0;
+		margin: 0;
+		display: block;
+	}
+
+	/* List Entry Byline */
+	.entry-byline {
+		display: block;
+		padding: 10px;
+		border: none;
+		margin: 0;
+	}
+	.entry-byline-block { }
+	.entry-byline-block:last-child { }
+
+}
+
+.archive-mosaic2 {}
+.archive-mosaic3 {}
+.archive-mosaic4 {}
+
+/*** Responsive Archive List Post Entry ***/
+
+@media only screen and (max-width: @breakPoint) {
+
+	/** Common **/
+	.entry-grid {
+		/* List Entry Byline */
+		.entry-byline-block { }
+		.entry-sticky-tag { }
+	}
+
+	/** Archive Big **/
+	.archive-big { }
+
+	/** Archive Medium/Small **/
+	.archive-medium, .archive-small {
+		.entry-content-featured-img {
+			margin: 0 auto @bigVerticalMargin;
+			float: none;
+		}
+	}
+
+	/** Archive Mosaic **/
+	.archive-mosaic {
+		/* Featured Image */
+		.entry-content-featured-img { padding: 20px 20px 0; }
+	}
+
+}
+
+
+/************* Read More *************/
+
+.more-link {
+	display: block;
+	margin-top: @bigVerticalMargin;
+	text-transform: uppercase;
+	.small-font();
+	// font-weight: bold;
+	// font-weight: 600;
+	a { display: block; }
+}
+
+
+/************* Navigation *************/
+
+.pagination.loop-pagination { margin: @verticalMargin 0; }
+.page-numbers {
+	border: solid 1px;
+	padding: 2px 5px;
+	margin: 2px;
+}
+.page-numbers.current { }
+.page-numbers.next { }
+.page-numbers.prev { }

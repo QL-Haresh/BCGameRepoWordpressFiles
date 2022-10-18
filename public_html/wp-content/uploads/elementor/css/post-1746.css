@@ -1,0 +1,68 @@
+.elementor-1746 .elementor-element.elementor-element-a733113{--content-width:100%;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--gap:0px;--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;}.elementor-1746 .elementor-element.elementor-element-2be251a{--content-width:100%;--width:40%;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--justify-content:flex-start;--align-items:flex-start;--flex-wrap:nowrap;}.elementor-1746 .elementor-element.elementor-element-2be251a.e-container{--flex-grow:0;--flex-shrink:1;}.elementor-1746 .elementor-element.elementor-element-e6ce4d0 .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;fill:#8490A0;color:#8490A0;background-color:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-e6ce4d0 .elementor-button:hover, .elementor-1746 .elementor-element.elementor-element-e6ce4d0 .elementor-button:focus{color:#FFFFFF;background-color:#2E3036;}.elementor-1746 .elementor-element.elementor-element-e6ce4d0 .elementor-button:hover svg, .elementor-1746 .elementor-element.elementor-element-e6ce4d0 .elementor-button:focus svg{fill:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-e6ce4d0{width:130px;max-width:130px;}.elementor-1746 .elementor-element.elementor-element-e6ce4d0.elementor-element{--align-self:center;--flex-grow:0;--flex-shrink:0;}.elementor-1746 .elementor-element.elementor-element-b61456f .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;fill:#8490A0;color:#8490A0;background-color:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-b61456f .elementor-button:hover, .elementor-1746 .elementor-element.elementor-element-b61456f .elementor-button:focus{color:#FFFFFF;background-color:#2E3036;}.elementor-1746 .elementor-element.elementor-element-b61456f .elementor-button:hover svg, .elementor-1746 .elementor-element.elementor-element-b61456f .elementor-button:focus svg{fill:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-b61456f{width:130px;max-width:130px;}.elementor-1746 .elementor-element.elementor-element-b61456f.elementor-element{--align-self:center;}.elementor-1746 .elementor-element.elementor-element-4aa7df5{text-align:left;}.elementor-1746 .elementor-element.elementor-element-4aa7df5.elementor-element{--align-self:center;--order:-99999 /* order start hack */;}.elementor-1746 .elementor-element.elementor-element-470c279{--content-width:100%;--width:60%;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--justify-content:flex-end;}.elementor-1746 .elementor-element.elementor-element-3b99d5a .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;fill:#8490A0;color:#8490A0;background-color:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-3b99d5a{width:130px;max-width:130px;}.elementor-1746 .elementor-element.elementor-element-3b99d5a.elementor-element{--align-self:center;--flex-grow:0;--flex-shrink:0;}.elementor-1746 .elementor-element.elementor-element-eb3a732 .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;text-shadow:0px 0px 10px rgba(0,0,0,0.3);fill:#FFFFFF;color:#FFFFFF;background-color:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-eb3a732{width:130px;max-width:130px;}.elementor-1746 .elementor-element.elementor-element-eb3a732.elementor-element{--align-self:center;--flex-grow:0;--flex-shrink:0;}.elementor-1746 .elementor-element.elementor-element-3844a7b .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;fill:#8490A0;color:#8490A0;background-color:#FFFFFF;}.elementor-1746 .elementor-element.elementor-element-3844a7b{width:130px;max-width:130px;}.elementor-1746 .elementor-element.elementor-element-3844a7b.elementor-element{--align-self:center;--flex-grow:0;--flex-shrink:0;}.elementor-1746 .elementor-element.elementor-element-9bf26e4 .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;}.elementor-1746 .elementor-element.elementor-element-9bf26e4{width:130px;max-width:130px;}.elementor-1746 .elementor-element.elementor-element-9bf26e4.elementor-element{--align-self:center;--flex-grow:0;--flex-shrink:0;}/* Start custom CSS for button, class: .elementor-element-e6ce4d0 */.casino-ico a {
+    background-color: transparent !important;
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-b61456f */.sports-ico a {
+    background-color: transparent !important;
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-3b99d5a */.sign-in a {
+    background-color: transparent !important;
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-eb3a732 */.sign-up .elementor-button-wrapper .elementor-button {
+    background-color: #\#3bc117!important;
+    background: conic-gradient(from 1turn,#6ACF15,#209B44)!important;
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-3844a7b */.sign-in a {
+    background-color: transparent !important;
+}/* End custom CSS */
+/* Start custom CSS for button, class: .elementor-element-9bf26e4 */.sign-up .elementor-button-wrapper .elementor-button {
+    background-color: #\#3bc117!important;
+    background: conic-gradient(from 1turn,#6ACF15,#209B44)!important;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-a733113 */.elementor-element-69f611e {
+    position: fixed;
+    background-color: #24262C;
+    padding: 0;
+    z-index: 9999;
+}
+
+.casino-ico svg {
+    width: 30px;
+}
+
+.casino-ico .elementor-button-text {
+    position: relative;
+    top: 8px;
+}
+
+.casino-ico a {
+    padding: 6px 20px 6px 10px !important;
+}
+
+
+.site-content {
+    padding-top: 60px !important;
+    margin-left: 351px;
+}
+
+.sports-ico a:hover, .casino-ico a:hover {
+    background-color: #2e3036 !important; 
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .sports-ico a {
+        margin-left: -30px !important;
+    }
+    .sign-in a, .sign-in .elementor-button-wrapper {
+        margin-right: -50px !important;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .sign-in, .sign-up {
+        width: 40% !important;
+    }
+    .elementor-element-5176d6b {
+        display: none;
+    }
+}/* End custom CSS */

@@ -1,0 +1,482 @@
+/**
+ * Base Typography and HTML
+ * ========================================================
+ */
+
+
+::selection { }
+::-moz-selection { }
+html {}
+html.translated-rtl * { text-align: right; } // For auto translated using GTranslate
+
+
+/************* Default Typography *************/
+
+body {
+	text-align: left;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+	font-family: @baseFontFamily;
+	font-weight: normal;
+	color: @baseFontColor;
+	-webkit-font-smoothing: antialiased; /* for better webkit rendering */
+	-webkit-text-size-adjust: 100%; /* size in percentage at which to display text in Safari on iPhone */
+}
+
+
+/************* Headings *************/
+
+h1, h2, h3, h4, h5, h6, .title {
+	line-height: @headingsLineHeight;
+	font-family: @headingsFontFamily;
+	font-weight: @headingsFontWeight;
+	color: @headingsColor;
+	margin: @headingsMargins;
+	text-rendering: optimizelegibility;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+h1 { font-size: @h1FontSize; }
+h2 { font-size: @h2FontSize; }
+h3 { font-size: @h3FontSize; }
+h4 { font-size: @h4FontSize; }
+h5 { font-size: @h5FontSize; }
+h6 { font-size: @h6FontSize; }
+.title {
+	font-size: @h3FontSize;
+	h1, h2, h3, h4, h5, h6 { font-size: inherit; }
+}
+.titlefont {
+	font-family: @headingsFontFamily;
+	font-weight: @headingsFontWeight;
+}
+
+
+/************* Basic HTML Tags *************/
+
+p { margin: @bigVerticalMargin 0; }
+hr {
+	border-style: solid;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: @bigVerticalMargin 0 @verticalMargin;
+	height: 0;
+	color: @bgHighlightToneDark;
+}
+em, var { font-style: italic; }
+strong, b { font-weight: bold; }
+big, .big-font { .big-font() }
+.huge-font {
+	font-size: unit( ( @baseFontSize + 46 ) / @baseFontSize, em);
+	line-height: 1em;
+}
+small, cite, .small { .small-font() }
+cite { font-style: italic; }
+q { font-style: italic; }
+q:before { content: open-quote; }
+q::after { content: close-quote; }
+address {
+	display: block;
+	margin: @verticalMargin 0;
+	font-style: normal;
+	border: 1px dotted;
+	padding: 1px 5px;
+}
+abbr[title], acronym[title] {
+	cursor: help;
+	border-bottom: 1px dotted;
+}
+abbr.initialism {
+	font-size: 90%;
+	text-transform: uppercase;
+}
+a[href^=tel] { // #8804 ; https://stackoverflow.com/questions/22915881/
+	color: inherit;
+	text-decoration: none;
+}
+
+
+/************* Blockquote *************/
+
+blockquote {
+	border-left: 5px solid @bgHighlightToneColor;
+	padding: 0 0 0 1em;
+	margin: @verticalMargin @bigVerticalMargin;
+	margin-left: 5px;
+	display: block;
+	font-style: italic;
+	// text-transform: uppercase;
+	color: @lightFontColor;
+	font-size: @h6FontSize;
+	clear: both;
+	text-align: justify;
+	p { margin: 0; }
+	small, cite {
+		display: block;
+		line-height: @baseLineHeight;
+		// text-transform: none;
+		text-align: right;
+		margin-top: 3px;
+	}
+	small:before { content: '\2014 \00A0'; }
+	cite:before {
+		content: "\2014 \0020";
+		padding: 0px 3px;
+	}
+	&.pull-left {
+		text-align: left;
+		float: left;
+	}
+	&.pull-right {
+		border-right: 5px solid @bgHighlightToneColor;
+		border-left: 0;
+		padding: 0 1em 0 0;
+		margin: @verticalMargin @bigVerticalMargin;
+		margin-right: 5px;
+		text-align: right;
+		float: right;
+	}
+}
+
+/*** Blockquotes Responsive ***/
+
+@media only screen and (max-width: @breakPoint) {
+	blockquote.pull-left, blockquote.pull-right { float: none; }
+}
+
+
+/************* Misc Blocks *************/
+
+.wp-block-social-links,
+.wp-block-buttons,
+.wp-block-media-text,
+.wp-block-gallery { margin: @bigVerticalMargin 0; } // same as p
+.has-small-font-size { line-height: @baseLineHeight } // font-size: 13px
+.has-regular-font-size, .has-normal-font-size { line-height: @baseLineHeight } // font-size: 16px
+.has-medium-font-size { line-height: 1.3em } // font-size: 20px
+.has-large-font-size { line-height: 1.2em } // font-size: 36px
+.has-larger-font-size, .has-huge-font-size { line-height: 1.1em } // font-size: 42px
+
+
+/************* Dropcaps *************/
+
+.has-drop-cap:not(:focus)::first-letter {
+	font-size: 3.4em; // 8.4em;
+	line-height: 1em; // 0.68;
+	font-weight: inherit; // 100
+	margin: 0.01em 0.1em 0 0; // 0.05em 0.1em 0 0;
+}
+
+
+/************* Social Icons Block *************/
+
+.wordpress .wp-block-social-links { list-style: none }
+.wp-block-social-links.is-style-logos-only .wp-social-link { padding: 0; }
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link { margin: 0 4px; }
+
+
+/************* Links *************/
+
+a {
+	color: @accentColor;
+	text-decoration: none;
+	.transition( color 0.3s ease-in, background-color 0.3s linear, border-color 0.3s linear; ); 
+}
+a.linkstyle, .linkstyle a { text-decoration: underline; }
+h1 a.linkstyle, .linkstyle h1 a, h2 a.linkstyle, .linkstyle h2 a, h3 a.linkstyle, .linkstyle h3 a, h4 a.linkstyle, .linkstyle h4 a, h5 a.linkstyle, .linkstyle h5 a, h6 a.linkstyle, .linkstyle h6 a, .title a.linkstyle, .linkstyle .title a, .titlefont a.linkstyle, .linkstyle .titlefont a { text-decoration: none; }
+
+
+/************* Typo Schemes *************/
+
+.accent-typo {
+	background: @accentColor;
+	color: @accentFontColor;
+}
+.invert-typo {
+	background: @baseFontColor;
+	color: @bodyBackground;
+}
+.enforce-typo {
+	background: @bodyBackground;
+	color: @baseFontColor;
+}
+.page-wrapper {
+	.accent-typo, .invert-typo, .enforce-typo {
+		a, a:hover, h1, h2, h3, h4, h5, h6, .title { color: inherit; }
+	}
+}
+.enforce-body-font {
+	font-family: @baseFontFamily;
+}
+.highlight-typo {
+	background: @bgHighlightColor;
+}
+
+
+/************* Code, Pre, Keyboard, Teletype *************/
+
+code, pre, kbd, tt { font-family: @monoFontFamily; }
+pre { overflow-x: auto; }
+code, kbd, tt {
+	padding: 2px 5px;
+	margin: 0 5px;
+	border: dashed 1px;
+}
+pre {
+	display: block;
+	padding: 5px 10px;
+	margin: @verticalMargin 0;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	color: #d14;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	&.scrollable {
+		max-height: 340px;
+		overflow-y: scroll;
+	}
+}
+
+
+/************* Lists *************/
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none outside;
+}
+ul ol, ul ul, ol ol, ol ul { margin-left: 10px; }
+li {
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+	/* display: inline; */
+}
+ul.unstyled, ol.unstyled {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none outside !important;
+}
+.main ul, .main ol {
+	margin: @verticalMargin;
+	margin-right: 0;
+}
+.main ol { list-style: decimal outside; }
+.main ul, .main ul.disc { list-style: disc outside; }
+.main ul.square { list-style: square outside; }
+.main ul.circle { list-style: circle outside; }
+.main ul ul,
+.main ol ul { list-style-type: circle; }
+.main ul ul ul, .main ul ol ul,
+.main ol ul ul, .main ol ol ul { list-style-type: square; }
+.main ul ol,
+.main ol ol { list-style-type: lower-alpha; }
+.main ul ul ol, .main ul ol ol,
+.main ol ul ol, .main ol ol ol { list-style-type: lower-roman; }
+.main ul ul, .main ul ol,
+.main ol ol, .main ol ul {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: block;
+}
+.main li {
+	margin-right: 0;
+	display: list-item;
+}
+// #wpadminbar li { display: list-item; } // Creates false positive in Theme Check plugin
+.borderlist>li:first-child { border-top: 1px solid; }
+.borderlist>li {
+	border-bottom: 1px solid;
+	padding: 0.15em 0;
+	list-style-position: outside;
+}
+
+
+/************* Lists - Definitions *************/
+
+dl { margin: @smallVerticalMargin 0; }
+dt { font-weight: bold; }
+dd { margin-left: @smallVerticalMargin; }
+.dl-horizontal {
+	*zoom: 1;
+	&:before, &:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+	&:after { clear: both; }
+	dt {
+		float: left;
+		width: 12.3em;
+		overflow: hidden;
+		clear: left;
+		text-align: right;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	dd { margin-left: 13.8em; }
+}
+
+/*** Responsive Definitions ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.dl-horizontal {
+		dt {
+			float: none;
+			width: auto;
+			clear: none;
+			text-align: left;
+		}
+		dd { margin-left: 0; }
+	}
+}
+
+
+/************* Tables *************/
+
+table {
+	width: 100%;
+	padding: 0;
+	margin: @verticalMargin 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	caption {
+		padding: 5px 0;
+		width: auto;
+		font-style:italic;
+		text-align: right;
+	}
+}
+th {
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding: 6px 6px 6px 12px;
+	&.nobg { background: none; }
+}
+td { padding: 6px 6px 6px 12px; }
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th { background-color: @bgHighlightColor; }
+
+
+/************* Forms *************/
+
+form { margin-bottom: @verticalMargin; }
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: @verticalMargin;
+	border: 0;
+	border-bottom: 1px solid @formHighlightColor;
+	background: @formFieldColor;
+	color: @formFontColor;
+	font-weight: bold;
+}
+legend small { color: @formFontColor; }
+label, input, select, textarea {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.4em;
+}
+label {
+	max-width: 100%;
+	display: inline-block;
+	font-weight: bold;
+}
+.input-text, textarea, select,
+input[type="text"], input[type="input"], input[type="password"], input[type="email"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+	-webkit-appearance: none;
+	border: 1px solid @formHighlightColor;
+	padding: 6px 8px;
+	//outline: none;
+	color: @formFontColor;
+	margin: 0;
+	max-width: 100%;
+	display: inline-block;
+	background: @formFieldColor;
+	.box-sizing( border-box );
+	.transition( border linear 0.2s, box-shadow linear 0.2s; );
+}
+.input-text:focus, textarea:focus,
+input[type="text"]:focus, input[type="input"]:focus, input[type="checkbox"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+	border: 1px solid @formHighlightColor - #333;
+	color: @formFontColor - #111;
+	outline: thin dotted; // outline: 0;
+	.box-shadow( 0 0 3px rgba(0,0,0,.2); );
+}
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] { width: auto; }
+input[type="checkbox"] { display: inline; }
+input[type="radio"], input[type="checkbox"] {
+	line-height: normal;
+	cursor: pointer;
+	margin: 4px 0 0;
+	margin-top: 1px \9;
+	*margin-top: 0;
+}
+textarea {
+	height: auto;
+	min-height: 60px;
+}
+select {
+	width: 215px;
+	background: @formFieldColor url('images/select.png') no-repeat center right;
+}
+select[multiple], select[size] { height: auto; }
+
+/*** Special ***/
+
+input:-moz-placeholder, textarea:-moz-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: @formFontColor + #333; }
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+	cursor: not-allowed;
+	background-color: @formFieldColor - #111;
+}
+input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="radio"][readonly], input[type="checkbox"][readonly] { background-color: transparent; }
+
+/*** Buttons Default ***/
+
+//## input[type="submit"], #submit, .button { outline: none; } // activated when normal and focus states dont have enough contrast difference in background
+input[type="submit"], #submit, .button {
+	background: none;
+	color: @accentColor;
+	display: inline-block;
+	cursor: pointer;
+	border: solid 1px @accentColor; // important to add border otherwise browser adds it
+	text-transform: uppercase;
+	font-weight: normal;
+	.transition( color 0.2s ease-in, background-color 0.2s linear, box-shadow linear 0.2s; );
+	//## &:focus { outline: thin dotted; }
+	&:hover, &:focus {
+		background: @accentColor;
+		color: @accentFontColor;
+	}
+	&.aligncenter { max-width: 60%; }
+}
+#submit a, .button a { color: inherit; }
+
+/*** Button Sizes ***/
+
+input[type="submit"], #submit, .button,
+input[type="submit"].button-medium, #submit.button-medium, .button-medium {
+	padding: 8px 40px 9px;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+input[type="submit"].button-small, #submit.button-small, .button-small {
+	padding: 6px 23px 8px;
+	font-size: 0.8em;
+	line-height: 1.8em;
+}
+input[type="submit"].button-large, #submit.button-large, .button-large {
+	padding: 13px 55px 14px;
+	font-size: 1em;
+	line-height: 1.4em;
+}

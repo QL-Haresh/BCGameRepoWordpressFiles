@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-lottery</title>
+	<defs>
+		<image  width="43" height="42" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAqCAMAAAAd31JXAAAAAXNSR0IB2cksfwAAADxQTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6nuFRiAAAABR0Uk5TAB8DDtH/PZxicv5J7xfN/TlpqJZAK2EPAAAByklEQVR4nI2Ui7KDIAxEIYA8LILy//96k0DU1tprph3b8Rh2N6BSN6Xh7s5nGevs9JD2Dis8QgOh7pGMiVH7BEWxVP4Ba1gs9n3QNrpR/+oF9JVGYyMLme/snFLa4Zk6a8r6K+oYTUJ7z0ZfXzpPr8SFOrz27qh80ao76ugbYD5QD5+wdE0pemeD3VFrlnK1lSxM3mqYu5A9vVLqGQ29pRGPbg8EN9FS1lPacSw/s/Ipjezw4xWzhy2/S+XnIby6yT7rtRQxB3oT1JqxVs/EJZpeLUfbmWPi0vL4COWFI8tLWQSl0IUO00T4JkOZWawo0Laj7pChtPwOXWztJowETrjn4DaQUCICKLaB7JaDTaA4D3HqAVQuh1i1IbfFuFHucbLpKAqWfJ2nsPGs5Ozs6IZdAdH87XwEd3KY6GxCE19cudGuyOtauxyhSatq73sG/64oCmupse+AM7qeF+5cWegy74kEafMhs1FLULW1ICgfSkIvtuoKfS7jJFiaMjB6+4oYEihCwLB+oQOexMWqfr54TAx0n/bA+wG7VB07D9jtb3REVHH9dnl5vBdpbDVj09+uOtxKn0v9FyVP2Hr5nNUNC5Dzg54C36N/diYbkbaoeIwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="14" y="15"/>
+</svg>

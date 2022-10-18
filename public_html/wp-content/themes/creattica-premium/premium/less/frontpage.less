@@ -1,0 +1,68 @@
+/**
+ * Frontpage
+ * ========================================================
+ */
+
+
+.home #main.main { padding-bottom: 0; } // frontpage
+.content.content-frontpage.no-sidebar { margin-top: 0; }
+
+
+/************* Frontpage - Widget Areas *************/
+
+#frontpage-area_a, #frontpage-area_b, #frontpage-area_c, #frontpage-area_d, #frontpage-area_e {}
+// @ref1242 redundant
+// .has-sidebar .frontpage-area {
+// 	&.module-bg-highlight,
+// 	&.module-bg-image { padding-left: @hgridSpanSmallGutter; padding-right: @hgridSpanSmallGutter; }
+// 	& > .hgrid > .hgrid-span-12 { padding: 0; }
+// 	&.module-bg-none:first-child .widget:first-child { margin-top: 0; }
+// 	&.module-bg-none:first-child .frontpage-slider.hgrid .lSSlideOuter { margin-top: 0; }
+// 	&.module-bg-none:first-child .entry-content > p:first-child { margin-top: 0; }
+// }
+.frontpage-area {
+	&.module-bg-highlight, &.module-bg-image { padding: 20px 0; }
+	&.area-highlight { background: @bgHighlightColor; }
+	&.module-bg-accent { background: @accentColor; }
+	&.module-bg-image.bg-scroll { background-size: cover; }
+	.widget { margin: @bigVerticalMargin 0; }
+}
+
+
+/************* Frontpage - Sliders *************/
+
+.frontpage-slider.hgrid-stretch > .hgrid-span-12 { padding: 0; }
+.fpg-slider.lightSlider {
+	// border-top: solid 1px #ddd;
+	// border-bottom: solid 1px #ddd;
+}
+.frontpage-area:first-child .frontpage-slider.hgrid .lSSlideOuter { margin-top: @hgridSpanGutter; }
+
+/*** HTML Slider ***/
+
+#frontpage-html-slider { }
+
+/*** Image Slider ***/
+
+#frontpage-img-slider { }
+
+
+/************* Frontpage - Page Content *************/
+
+#frontpage-page-content {
+	// .content, .sidebar { margin-top: 1em; }
+}
+.frontpage-area {
+	.entry-content { border-bottom: none; } // front page set to display static page
+	.entry-the-content { margin: 2em 0 0; } // front page set to display static page
+	// .hoot-blogposts { margin-top: 20px; margin-bottom: 2em; }
+	// &:first-child .hoot-blogposts { padding-top: @hugeVerticalMargin; }
+	.entry-footer { display: none; }
+}
+// .module-bg-highlight, .module-bg-image {
+// 	.hoot-blogposts { margin-top: 20px; }
+// }
+
+@media only screen and (max-width: @breakPoint) {
+	#frontpage-page-content .sidebar { margin-top: @widgetMargin; }
+}

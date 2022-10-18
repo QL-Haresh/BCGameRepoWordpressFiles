@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-sports-ball-icon</title>
+	<defs>
+		<image  width="44" height="45" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAtBAMAAAAn9pSXAAAAAXNSR0IB2cksfwAAABtQTFRFR3BMmaSwmaSwmaSwmaSwmaSwmaSwmaSwmaSwhdnSOwAAAAl0Uk5TABFYfc6pMP/wCEf5EAAAAaVJREFUeJydk81PwkAQxWeLbTxWFOFY0ASPaKJ4FI3WY0kI9VijRK/S1tmj9av+2c7stNJFT26gTX7Zvpl98xZAltq79NXsyAdr3YWIgYOYnTTpPaJgxKsV7eAK47SmKmzirNbfwSbGSYXHNk4rDbQxioqzjgODW+t49A/8p3Yn+N2JM4VhBKGNM3CXMC5gaOMl9FKIU9iw8RmMcwi179k4UWVGwlFlSoVTcEmetdwmjrgWlKgTiFc4B9LUhPFTigqewiNjalonZj59xpnvfXHr/P2r2W52T+DAKJkuRqoOhBiXQk/q0CtoIxZSvahsHTmyO2jV1p7y+5lKE87EnyVP+MY0MGS8NG6+mRmrfW6jy9oFN3Ne52dRYuTybnriXFhiovnSYjzaNNH06K8POVhPHuOky5HaRnrEmkbq9RVjv03ftsuc8ANqcwkGvhqYa1FSuxKT7KKq7h2XdVBCOdeuD7dy5tz/iXfisHZgxioBV7FYRrhgK/JK0Ln+SCgBxhNv9h407prLDtJh7XvJNrOxuU1VKbv12jVehNyMnsP62jK/an0Dg6D7nT6HLXkAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="14" y="14"/>
+</svg>

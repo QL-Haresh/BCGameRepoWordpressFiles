@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-casino-icon-white-menu-icon</title>
+	<defs>
+		<image  width="38" height="48" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAwBAMAAACPnBUbAAAAAXNSR0IB2cksfwAAABtQTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6EKCK4wAAAAl0Uk5TAJvyD0L/IWfNCenIQQAAASBJREFUeJxtk0FLxDAQhSMtq8dFWD17qGchgh6XlQWvDb7dHKMgeFyR0uvCWn+3STqdNJN9p/J1Mu/NNFWKdK3vlFANDSdYBW1kndrqXcE6vZeoarR5EOzCeywF+/BMNhw8s/KoZyY/3AWGzLluIjPrzCEy3Ce0GIhZx+wLxPDHMwzM7DTLM5jhxHkTs5w3MRq6y1jMXSNjWLODbzS2jS6rqQ/1bf0MfGRq4qa3M7ZUn/R0VFf0tJuSwH6Th09DFjO1qimYUQUCztYNBbNnPbYFe+OkSUeeN8nxSluQW1jqZUxjX/EboTmERb8H9NNh/xTgzfiRHvveVb7aLfrbl9mNCfYnlWsVw2YajQ4Z23CM7E5C3MkNIAvTvowrWfw3/wE69bYMFf3a9AAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="16" y="12"/>
+</svg>

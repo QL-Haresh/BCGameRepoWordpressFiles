@@ -1,0 +1,59 @@
+/**
+ * Footer
+ * ========================================================
+ */
+
+
+/************* Sub Footer *************/
+
+#sub-footer {
+	// background: @bgHighlightColor;
+	border-top: solid 1px @bgHighlightToneColor;
+	text-align: center;
+	// ul, ol, li { display: inline; }
+	// a:hover { text-decoration: underline; }
+	.widget { margin: @sidebarWidgetMargin - 15 0; }
+	.widget-title {}
+}
+
+
+/************* Footer *************/
+
+.footer {
+	border-top: solid 5px @bgHighlightToneColor;
+	border-color: rgba( 0,0,0,0.13 );
+	padding: 10px 0 10px;
+	line-height: @baseLineHeight; // reset line height for custom font size via admin panel
+	color: @baseFontColor + #111;
+	// h1, h2, h3, h4, h5, h6, .title { color: inherit; }
+	a:not(input):not(.button) { color: inherit; }
+	a:hover:not(input):not(.button) { text-decoration: underline; }
+	p { margin: 1em 0; }
+	.footer-column { min-height: 1em; }
+	.hgrid-span-12.footer-column { text-align: center; }
+	.widget { margin: @widgetMargin - 10 0; }
+	.widget-title {
+		color: @baseFontColor;
+		font-size: @baseFontSize;
+		font-family: inherit;
+		font-weight: bold;
+		// font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: @verticalMargin;
+	}
+}
+
+
+/************* Post Footer *************/
+
+#post-footer {
+	border-top: solid 1px @bgHighlightToneColor;
+	border-color: rgba( 0,0,0,0.1 );
+	text-align: center;
+	padding: 10px 0;
+	font-style: italic;
+	font-family: @altFontFamily;
+	color: @baseFontColor + #222;
+	// .hgrid { .opacity(70); }
+}
+#post-footer a { color: inherit; }

@@ -1,0 +1,26 @@
+/**
+ * Theme Manager
+ * ========================================================
+ */
+
+/*** General ***/
+.hybridextend-theme-mgr { margin: 20px auto; padding: 5px 20px; border: 1px solid #d5d5d5; -moz-border-radius: 5px; -khtml-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.hybridextend-theme-mgr .warning { color: #aa0000; }
+.hybridextend-theme-mgr form { margin: 15px 0; }
+.hybridextend-theme-mgr textarea { width: 100%; max-width: 600px; margin: 0 0 10px; }
+.hybridextend-theme-mgr input {}
+.hybridextend-theme-mgr label { min-width: 90px; display: inline-block; }
+
+/*** Autoupgrade ***/
+#hybridextend-theme-mgr-autoupgrade label { display: block; }
+#hybridextend-theme-mgr-autoupgrade input[type="text"] { margin-left: 0; min-width: 260px; }
+/* #hybridextend-theme-mgr-autoupgrade p.description { margin-left: 95px; } */
+#hybridextend-theme-mgr-autoupgrade p.submit { margin-top: 10px; padding-top: 0; }
+
+.licstat-unknown, .licstat-firewall { color: #2ea2cc; } /* blue */
+.licstat-active { color: #7ad03a; } /* green */
+.licstat-inactive { color: #ffba00; } /* orange */
+.licstat-invalid { color: #dd3d36; } /* red */
+
+/*** Export ***/
+#hybridextend-theme-mgr-export h4 span { background: #0073aa; color: #fff; font-weight: normal; text-transform: uppercase; padding: 1px 4px; font-size: 0.8em; }

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-welcome-bonus</title>
+	<defs>
+		<image  width="39" height="38" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAMAAABwIXKiAAAAAXNSR0IB2cksfwAAAF1QTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6OY6UdQAAAB90Uk5TAAiT3f29KsH//l8aL3CpUAJs7ngSPczfibNG0vtq/LRgE7UAAAG7SURBVHichVTRtqMgDASNEkQxVatiXf//MxdCe0Stt5w+1GGYJGSCEOclsxyK8gJfaApBI/4kVsi84gfNeDnUWsPNft3YluRDdQDgFQFVb4QYnsOR1qBfY9d1qgcviJhPALPzf6xM1ZAXPEiILAgqIZY8gnanUROhkb+WLKs8Ru/DmIR2OkJ0yOUN1jv0jJA7lqYvevLFWE2pIEUwPSyn9YXuSPO3wsS0M4+u94lLcV71s13nHSbVXTkxkCzWfct0GX3n+arX9qP2r8D+lrdgESOzkfR8Q6vYFYYEZfCH4czE7Q4um9hwev4auWKXofZ3HQ54M93wgik0gPeYAu5O9ZVXsh0x95UY9mXxveCQvd9dOFc1gZI3F00ZglpCQ8Mvz+/uT9ot8UuP7Q2v3OwuIYc8r9v6pEmyceO41Sk0s+2HA1O66PEUjNCYQvI9NE2CDddREOKVDlcM+3yPFldjlqrcYxx8/9FriR8YHbpdxvE4xP0M5mabJdrH2m3TAXSn2jzoSrtuK78uqDdbU/NyjTwNl6z53lv/rnhBgIGYQHTTqSra59f7R5INEh3y5zIKYPpN8/kYIy9J/Qfy+hlWouzVxwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="16" y="18"/>
+</svg>

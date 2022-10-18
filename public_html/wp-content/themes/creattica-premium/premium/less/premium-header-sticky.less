@@ -1,0 +1,41 @@
+/************* Sticky Header *************/
+
+// Stick entire leftbar (conflicts with lightslider.move, also no proper solution for menu expanded beyond screen height)
+// @media only screen and (min-width: @breakPointUpper) {
+// 	.leftbar-inner.stuck {
+// 		position: fixed;
+// 		bottom: 0;
+// 		width: @hgridLeftBar;
+// 	}
+// }
+
+// Stick only the primary header
+@media only screen and (min-width: @breakPointUpper) {
+	// #header {
+	// 	width: @hgridLeftBar;
+	// 	.sticky-wrapper { width: inherit; }
+	// } // required for fixed element to have width
+	// #header-primary.stuck {
+	// 	position: fixed;
+	// 	top: 0;
+	// 	background: @bodyBackground;
+	// 	z-index: 999;
+	// 	width: inherit;
+	// 	.box-shadow( 0px 3px 5px 0px rgba(0, 0, 0, 0.1) );
+	// 	#site-logo { margin-bottom: 0; }
+	// }
+	#leftbar-inner {
+		.sticky-wrapper { width: inherit; height: auto; }
+	}
+	#header.stuck {
+		width: @hgridLeftBar;
+		position: fixed;
+		top: 0;
+		background: @bodyBackground;
+		z-index: 999; // 1040,1050 for lightbox
+		// #site-logo { margin-bottom: 0; }
+	}
+}
+@media (max-width: @breakPoint) {
+	.sticky-wrapper { height: auto !important; }
+}

@@ -1,0 +1,88 @@
+/**
+ * Hoot Grid
+ * grid sets the width, row clears the floats for containing spans
+ * spans are the building blocks for content structure
+ * ========================================================
+ */
+
+
+.hgrid {
+	width: 100%;
+	// min-width: @hgridMinWidth;
+	max-width: @hgridMaxWidth;
+	.center-block();
+}
+.hgrid-stretch {
+	width: 100%;
+	// min-width: @hgridMinWidth;
+}
+.hgrid, .hgrid-stretch { .clearfix(); }
+
+[class *= "hgrid-span-"], [class *= "hcolumn-"] {
+	padding: 0 @hgridSpanGutter;
+	.box-sizing(border-box);
+	float: left;
+	position: relative;
+}
+[class *= "hgrid-span-"].full-width,
+[class *= "hcolumn-"].full-width { padding: 0; }
+
+.flush-columns { margin: 0 -@hgridSpanSmallGutter; }
+[class *= "hcolumn-"] { padding: 0 @hgridSpanSmallGutter; }
+
+
+/************* Span Widths*************/
+
+.hgrid-span-1  { .gridSpanWidth(1);  }
+.hgrid-span-2  { .gridSpanWidth(2);  }
+.hgrid-span-3  { .gridSpanWidth(3);  }
+.hgrid-span-4  { .gridSpanWidth(4);  }
+.hgrid-span-5  { .gridSpanWidth(5);  }
+.hgrid-span-6  { .gridSpanWidth(6);  }
+.hgrid-span-7  { .gridSpanWidth(7);  }
+.hgrid-span-8  { .gridSpanWidth(8);  }
+.hgrid-span-9  { .gridSpanWidth(9);  }
+.hgrid-span-10 { .gridSpanWidth(10); }
+.hgrid-span-11 { .gridSpanWidth(11); }
+.hgrid-span-12 { .gridSpanWidth(12); }
+
+
+/************* Column Widths *************/
+
+.hcolumn-1-1, .hcolumn-2-2, .hcolumn-3-3, .hcolumn-4-4, .hcolumn-5-5 { .gridSpanWidth(12); }
+.hcolumn-1-2 { .gridSpanWidth(6); }
+.hcolumn-1-3 { .gridSpanWidth(4); }
+.hcolumn-2-3 { .gridSpanWidth(8); }
+.hcolumn-1-4 { .gridSpanWidth(3); }
+.hcolumn-2-4 { .gridSpanWidth(6); }
+.hcolumn-3-4 { .gridSpanWidth(9); }
+.hcolumn-1-5 { width: 20%; }
+.hcolumn-2-5 { width: 40%; }
+.hcolumn-3-5 { width: 60%; }
+.hcolumn-4-5 { width: 80%; }
+
+
+/************* Responsive Grid *************/
+
+@media only screen {
+	@media (max-width: @higherBreakPoint) {
+		[class *= "hgrid-span-"],
+		[class *= "hcolumn-"] { padding: 0 @hgridSpanResponsiveGutter; }
+		.flush-columns { margin: 0; } // margin: 0 -@hgridSpanResponsiveGutter;
+		/* In adaptive grid, smaller spans and units will adapt to less screen space */
+		// @todo: Fix floats with nth-child
+		.adaptive .hcolumn-1-5 { width: 40%; }
+		.adaptive .hcolumn-1-4 { .gridSpanWidth(6); }
+		.adaptive .hgrid-span-1 { .gridSpanWidth(2); }
+		.adaptive .hgrid-span-2 { .gridSpanWidth(4); }
+		.adaptive .hgrid-span-6 { .gridSpanWidth(6); }
+	}
+	@media (max-width: @breakPoint) {
+		[class *= "hgrid-span-"], .adaptive [class *= "hgrid-span-"],
+		[class *= "hcolumn-"], .adaptive [class *= "hcolumn-"] { width: 100%; }
+	}
+}
+@media only screen and (min-width: @breakPointUpper) {
+	.hcol-first { padding-left: 0; }
+	.hcol-last { padding-right: 0; }
+}

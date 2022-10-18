@@ -1,0 +1,66 @@
+/**
+ * Layout
+ * ========================================================
+ */
+
+
+body { background: @bodyBackground; }
+@media screen and (max-width: 600px) {
+	body.logged-in.admin-bar { position: static; }
+}
+
+#page-wrapper {
+	width: @hgridMaxWidth + @hgridLeftBar;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	height: auto;
+}
+// #topbar, #below-header, #sub-footer, #footer { overflow: hidden; }
+
+#leftbar {
+	width: @hgridLeftBar;
+	float: left;
+	position: absolute;
+	z-index: 1;
+	min-height: 100%; // height: 100%; // if we set height, then leftbar squishes down to main content's height (when main content is less). Removing height and adding top:0;bottom:0; doesnt work when main content is smaller. Best is to remove height (so it works when main content is smaller), and add min-height:100% (for when main content is taller)
+}
+#main, #sub-footer, #footer, #post-footer {
+	// background: @bodyBackground; // should be transparent for stretched layout
+	margin-left: @hgridLeftBar;
+	width: auto;
+}
+
+@media only screen and (max-width: @breakPoint) {
+	#leftbar {
+		width: 100%;
+		float: none;
+		position: relative;
+		z-index: inherit; // For mobile fixed menu to have its z-index
+	}
+	#main, #sub-footer, #footer, #post-footer { margin-left: 0; }
+}
+@media only screen and (min-width: @breakPointUpper) {
+	#leftbar, #main {
+		border-right: solid 1px @bgHighlightLight;
+		.box-shadow( 3px 0px 5px 0px rgba(0, 0, 0, 0.1) );
+	}
+	.content-stretch #main {
+		border-right: none;
+		.box-shadow(none);
+	}
+}
+
+
+/* Sidebar and Content Layout */
+
+.content.no-sidebar {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content.layout-wide-left,
+.content.layout-narrow-left { float: right; }
+.sidebar.layout-wide-left,
+.sidebar.layout-narrow-left {}

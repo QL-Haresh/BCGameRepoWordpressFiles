@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="20" height="20">
+	<title>bc-bonuses</title>
+	<defs>
+		<image  width="42" height="33" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAhCAMAAACY2smqAAAAAXNSR0IB2cksfwAAADlQTFRFaHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6aHB6lueFtwAAABN0Uk5TABFnn9gFNP/9/uIrcKTmQL90oTJBusIAAAGzSURBVHicjZPrgqsgDIQTIQQUL/j+D7tDwFvXc7b5UW36OZkMluhRPDjv3CD0ZwWvqkC/IGP0psjcOxLeB4QUYyB23mvXHbz6txFhTCAH1aocQAjuUb/ZaUwpw4M6puAAiNNWTj41NSVmF70QGBjxGjvr+aGJDkSH6sGpDwgDzk823MiUVEeiMXmSiOkhVTK6wX2wIMEGyrArAzzwGCvrWLpjL+d0oLMwPjE/OgnJCrtJaDbC5RM7yYwr0xhnydbBCKIczbMdzbTYiCz1kZkg7SpqcJ4GI2McLjKJjFgtM/w6aqgp23pA5SB1lbWtNitc59S6zXKlobq13sZsTeRVXUBa0w2OEbZ7yIFKbc+WxizF0rsrn6q7xVDPq+qZ6gWbZ6gaoky7XSeZLeFy2jzYjARW7FVkbc+T2GFQSZ09HGtFadWFpfko+GKOyyOAZs1Oaz1+yu3mQrUJ18CP96VH1tVP9DiGw8CFbsQ9jxM9z+xEWw7Hdg/0COt6tzc73P0NtfXK7S+D0JiWd1RvazWY/oMW+qjtn2j+RHn/WhXwui9fqbaSnu+tFn5Ha3j7dq99IvoBUdweY33HyWwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="14" y="19"/>
+</svg>

@@ -1,0 +1,40 @@
+.elementor-1723 .elementor-element.elementor-element-588c91b{--content-width:100%;--min-height:100vh;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--padding-top:0px;--padding-right:10px;--padding-bottom:10px;--padding-left:10px;--z-index:9999;}.elementor-1723 .elementor-element.elementor-element-588c91b:not(.elementor-motion-effects-element-type-background), .elementor-1723 .elementor-element.elementor-element-588c91b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#1C1E22;}.elementor-1723 .elementor-element.elementor-element-ed5858a{--content-width:100%;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--justify-content:center;}.elementor-1723 .elementor-element.elementor-element-3520f3c .elementor-button{font-family:"Roboto", Sans-serif;font-weight:500;fill:#909FAC;color:#909FAC;background-color:#24262C;}.elementor-1723 .elementor-element.elementor-element-3520f3c{width:initial;max-width:initial;}.elementor-1723 .elementor-element.elementor-element-3520f3c.elementor-element{--align-self:center;}.elementor-1723 .elementor-element.elementor-element-9b2db53{text-align:center;}.elementor-1723 .elementor-element.elementor-element-6194d37 .elementor-nav-menu .elementor-item{font-family:"Montserrat", Sans-serif;font-size:16px;font-weight:600;text-decoration:none;}.elementor-1723 .elementor-element.elementor-element-6194d37 .elementor-nav-menu--main .elementor-item{color:#909FAC;fill:#909FAC;}.elementor-1723 .elementor-element.elementor-element-6194d37 .elementor-nav-menu--main .elementor-item.elementor-item-active{color:#FFFFFF;}.elementor-1723 .elementor-element.elementor-element-6194d37{z-index:9999;}/* Start custom CSS for button, class: .elementor-element-3520f3c */.navbar-button a:hover {
+    fill: #fff !important;
+    color: #fff !important;
+}/* End custom CSS */
+/* Start custom CSS for nav-menu, class: .elementor-element-6194d37 */.sidebar-nav li {
+    background-color: #24262c;
+}
+
+.sidebar-nav a {
+    margin-bottom: 5px !important;
+}
+
+.sidebar-nav .elementor-nav-menu a {
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+}
+
+.sidebar-nav .elementor-nav-menu a:hover {
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+}
+
+.sidebar-nav a:hover {
+    background-color: #2e3036;
+    color: #fff !important;
+}
+
+.vip-club {
+    color: #fec038;
+}/* End custom CSS */
+/* Start custom CSS for html, class: .elementor-element-ad46cb8 */.close a {
+    width: 20px !important;
+}
+
+.close-logo {
+    display: none !important;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-588c91b */.bcmenu-icon {
+    width: 40px;
+}/* End custom CSS */

@@ -1,0 +1,116 @@
+//
+// Mixins
+// ==================================================
+
+
+// Utility Mixins
+// --------------------------------------------------
+
+// Clearfix
+.clearfix() {
+	&:after { content: ""; display: table; clear: both; }
+}
+
+// Center-align a block level element
+.center-block() { display: block; margin-left: auto; margin-right: auto; }
+
+// Flush
+.flush() { margin: 0; padding: 0; }
+
+// CSS image replacement
+// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+.hide-text() { font: 0/0 a !important; color: transparent !important; text-shadow: none !important; background-color: transparent !important; border: 0 !important; width: 0; height: 0; overflow: hidden; }
+
+// Tables ( Vertical Align )
+.table() { display: table; width: 100%; }
+.table-cell() { display: table-cell; }
+.table-cell-mid() { display: table-cell; vertical-align: middle; }
+
+
+// Grid Mixins
+// --------------------------------------------------
+
+// grid span width
+.gridSpanWidth(@span) { width: @hgridSpanWidth * @span; }
+
+
+// CSS3 PROPERTIES
+// --------------------------------------------------
+
+// Box sizing
+.box-sizing(@boxmodel) { -webkit-box-sizing: @boxmodel; -moz-box-sizing: @boxmodel; box-sizing: @boxmodel; }
+
+// Opacity
+.opacity(@opacity) { opacity: @opacity / 100; filter: ~"alpha(opacity=@{opacity})"; }
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+// Drop shadows
+.box-shadow(@shadow){
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Flex Model
+.flexbox() {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-order(@order) {
+  -webkit-order: @order;
+          order: @order;
+}
+.flex-wrap(@wrap) {
+  -webkit-flex-wrap: @wrap;
+          flex-wrap: @wrap;
+}
+
+
+// Typography
+// --------------------------------------------------
+
+// Big Font
+.big-font() { font-size: @baseFontSizeBig; line-height: 1.333333em; } // {18px}
+
+// Small Font
+.medium-font() { font-size: @baseFontSizeMedium; line-height: 1.8em; } // {13px}
+
+// Tiny Font
+.small-font() { font-size: @baseFontSizeSmall; line-height: 1.8em; } // {12px}
+
+// Icon Font
+.fontawesome() { font-family: 'Font Awesome 5 Free'; font-weight: 900; font-style: normal; text-decoration: inherit; speak: none; -webkit-font-smoothing: antialiased; vertical-align: middle; }
+
+
+// Placeholder text
+// -------------------------
+.placeholder(@color: @placeholderText) {
+  &:-moz-placeholder {
+    color: @color;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+}

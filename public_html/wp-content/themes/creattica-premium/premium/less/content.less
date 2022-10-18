@@ -1,0 +1,352 @@
+/**
+ * Main #Content
+ * ========================================================
+ */
+
+// Common styles for Post Page (single) and single Post in an Archive list
+// To style posts in archive lists specifically, use content-archive.less
+/** Use 'entry-content'/'entry-the-content' classes to style posts on single post pages specifically **/
+
+
+#main.main {
+	padding-bottom: @hugeVerticalMargin;
+	overflow: hidden;
+}
+
+
+/************* Loop Meta *************/
+
+#loop-meta {
+	&.pageheader-bg-stretch,
+	&.pageheader-bg-both,
+	&.pageheader-bg-default { background: @bgHighlightColor; }
+	&.pageheader-bg-incontent,
+	&.pageheader-bg-none { background: none; }
+	position: relative;
+	border-bottom: solid 1px @bgHighlightToneColor;
+}
+.loop-meta {
+	float: none;
+	text-align: center;
+	background-size: contain;
+	padding: 75px 0;
+}
+.loop-title {
+	margin: 0;
+	font-size: @h2FontSize;
+}
+.loop-description { }
+.loop-description p {
+	margin: @verticalMargin 0;
+	font-size: 1.06666666em; // 15px => 16px // @baseFontSizeBig:18px
+}
+.loop-description > p:last-child { margin-bottom: 3px; }
+
+.loop-meta-gravatar img {
+	margin-bottom: 1em;
+	.box-shadow( 1px 1px 2px 1px rgba(0,0,0,.2); );
+	.border-radius( 1500px );
+}
+.archive.author #content .loop-meta { text-align: center; }
+
+#content {
+	#loop-meta { margin-bottom: @verticalMargin; border-bottom: none; }
+	#loop-meta.pageheader-bg-default,
+	#loop-meta.pageheader-bg-stretch,
+	#loop-meta.pageheader-bg-none { background: none; }
+	#loop-meta.pageheader-bg-incontent,
+	#loop-meta.pageheader-bg-both {
+		background: @bgHighlightColor;
+		padding: 15px 25px;
+		.entry-byline {
+			// border-bottom: none;
+			padding-bottom: 0;
+		}
+	}
+	.loop-meta {
+		text-align: left;
+		padding: 0;
+	}
+	.loop-title {
+		// text-transform: none;
+		// font-size: @h4FontSize;
+	}
+}
+
+#custom-content-title-area { text-align: center; }
+.pre-content-title-area {
+	ul.lSPager { display: none; }
+}
+.post-content-title-area {}
+.content-title-area-stretch {
+	.hgrid-span-12 { padding: 0; }
+}
+.content-title-area-grid { margin: @verticalMargin 0; }
+.content .post-content-title-area { margin: 0 0 @hugeVerticalMargin; }
+
+/*** Loop Meta Responsive ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.loop-meta { padding: 50px 0; }
+}
+
+
+/************* Entry Meta Byline (Singular Post Page) *************/
+
+.entry-byline {
+	// .opacity(80);
+	.small-font();
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+.content .entry-byline {
+	// border-bottom: solid 1px;
+	// border-top: solid 1px;
+	// border-bottom: solid 1px @bgHighlightToneColor;
+	margin-top: 0;
+	padding: 7px 5px;
+	&.empty { padding: 0; }
+}
+.entry-byline-block {
+	display: inline;
+	&:after{
+		content: "|";
+		margin: 0 7px;
+	}
+	&:last-child:after { display: none; }
+}
+.entry-byline a { color: inherit; }
+.entry-byline a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+.entry-byline-label { margin-right: 3px; }
+.entry-byline-author { }
+.entry-byline-date { }
+.entry-byline-cats { }
+.entry-byline-tags { }
+.entry-byline-comments { }
+
+.entry-footer {
+	div.entry-byline { background: none; }
+	.entry-byline {
+		// .opacity(100);
+		color: @accentColor;
+		margin: 0;
+		padding: @bigVerticalMargin 5px;
+		// border-top: none;
+		border-bottom: solid 1px @bgHighlightToneColor;
+	}
+	.entry-byline-block {
+		// padding: 0 10px 0 0;
+		// margin-right: 10px;
+	}
+}
+
+
+/************* <main> #content *************/
+
+.main-content-grid {}
+.content { margin-top: @hgridSpanGutter + 20; }
+.main-content-grid:first-child .content { margin-top: @hgridSpanGutter; }
+
+
+/************* Single Post (Single post on Archive page / Singular Post page) *************/
+/** Caution: Modify this CSS block carefully as these divs display differently in above two templates. **/
+/** Use specific classes instead: 'entry-content' / 'entry-the-content' classes for single post pages, and 'entry-grid' classes to style posts in archive lists **/
+
+.entry { }
+.entry-header { }
+.entry-title { }
+.entry-content-featured-img {
+	display: block;
+	margin: 0 auto @hugeVerticalMargin;
+}
+
+
+/************* Single Post (Single Post Page) *************/
+
+.entry-content { border-bottom: solid 1px @bgHighlightToneColor; }
+.entry-content.no-shadow { border: none; }
+.entry-the-content {
+	margin-bottom: @hugeVerticalMargin;
+	p:first-child, h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child { margin-top: 0; }
+	.clearfix();
+	//p { .clearfix(); }
+}
+
+
+/************* Post Navigation *************/
+
+.page-links {
+	text-align: center;
+	margin: @hugeVerticalMargin 0;
+}
+.page-links a, .page-links .page-numbers {
+	border: solid 1px;
+	padding: 2px 5px;
+	margin: 2px;
+}
+.entry-footer { }
+.loop-nav {
+	padding: @bigVerticalMargin 5px;
+	border-bottom: solid 1px @bgHighlightToneColor;
+}
+.loop-nav .prev { }
+.loop-nav .next { }
+
+
+/************* Comments *************/
+
+#comments-template { padding-top: @bigVerticalMargin; }
+#comments { }
+#comments-number {
+	font-size: @baseFontSize;
+	color: @lightFontColor;
+	font-family: inherit;
+	font-weight: bold;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+#comments .comment-list, #comments .comment-list ol.children {
+	list-style-type: none;
+	margin: 0;
+}
+.comment-list { padding-bottom: @smallVerticalMargin; }
+
+/*** Single Comment ***/
+
+.comment {
+	position: relative;
+	margin: 0;
+}
+.comment article { position: relative; }
+.comment p { margin: 0 0 0.3em; }
+.comment li.comment {
+	border-left: solid 1px @bgHighlightToneColor;
+	padding-left: 40px;
+	margin-left: 20px;
+}
+.comment-avatar {
+	position: absolute;
+	width: 50px;
+	top: 5px;
+	left: 5px;
+}
+.comment-by-author {
+	.small-font();
+	color: @lightFontColor;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 3px;
+}
+.comment-content-wrap { margin: 30px 0px 20px 70px; }
+.comment-meta { }
+.comment-meta-block, .comment-edit-link {
+	display: inline-block;
+	padding: 0 15px 0 0;
+	margin: 0 15px 0 0;
+	border-right: solid 1px;
+	.small-font();
+	color: @lightFontColor;
+	text-transform: uppercase;
+}
+.comment-meta-block:last-child {
+	border-right: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+.comment-meta-block cite.comment-author {
+	font-style: normal;
+	font-size: 1em;
+}
+
+/*** Single Comment by post author ***/
+
+.comment.bypostauthor > article {
+	background: @bgHighlightColor;
+	.comment-meta-block, .comment-edit-link { color: inherit; }
+}
+.comment.bypostauthor > article .comment-avatar {
+	top: 18px;
+	left: 18px;
+}
+.comment.bypostauthor > article .comment-content-wrap {
+	margin-left: 80px;
+	padding: 13px 10px 13px 5px;
+}
+.comment.bypostauthor + #respond {
+	background: @bgHighlightColor;
+	padding: 20px 20px 1px;
+}
+.comment.bypostauthor + #respond #reply-title { margin-top: 0; }
+
+/*** Single Comment Ping ***/
+
+.comment-ping {
+	border: solid 1px @bgHighlightToneColor;
+	padding: 5px 10px 5px 15px;
+	margin: 30px 0px 20px;
+}
+.comment-ping cite { font-size: 1em; }
+
+/*** Response Form ***/
+
+#reply-title {
+	font-size: @baseFontSize;
+	font-family: inherit;
+	font-weight: bold;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+#reply-title small { display: block; }
+#respond p { margin: 0 0 0.3em; }
+#respond label {
+	.small-font();
+	font-weight: normal;
+	padding: @smallVerticalMargin 0;
+	width: 15%;
+	vertical-align: top;
+}
+#respond input[type=checkbox] + label {
+	display: inline;
+	margin-left: 5px;
+	vertical-align: text-bottom;
+}
+
+/*** Comments Responsive ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.comment article { margin: 10px 0; }
+	.comment-avatar {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+	.comment-content-wrap { margin: 10px 0 0 0; }
+	.comment.bypostauthor > article .comment-content-wrap { margin: 10px 0 0 10px; }
+	.comment li {
+		padding-left: 15px;
+		margin-left: 10px;
+	}
+}
+
+
+/************* 404 Page Content *************/
+
+// .custom-404-content .entry-the-content { width: auto; }
+
+
+/************* Attachment Page Content *************/
+
+.entry.attachment .entry-content { border-bottom: none; }
+.entry.attachment .entry-the-content {
+	width: auto;
+	text-align: center;
+	p:first-of-type {
+		margin-top: 2em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.more-link { display: none; }
+}

@@ -1,0 +1,41 @@
+/************* Goto Top Button *************/
+
+.fixed-goto-top {
+	position: fixed;
+	z-index: 2;
+	bottom: 55px;
+	right: 65px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #aaa;
+	background: rgba( 0, 0, 0, 0.2 );
+	color: #fff;
+	&:hover {
+		background: #aaa;
+		color: #fff;
+	}
+}
+#header .fixed-goto-top-wrap {
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: -40px;
+}
+#header .fixed-goto-top {
+	position: static;
+	width: 100%;
+	display: block;
+}
+.waypoints-goto-top {
+	.opacity(0);
+	.transition( opacity 0.5s linear; );
+	&.topshow { .opacity(100); }
+}
+
+/*** Responsive Goto Top Button ***/
+
+@media only screen and (max-width: @breakPoint) {
+	.fixed-goto-top { display: none; }
+}

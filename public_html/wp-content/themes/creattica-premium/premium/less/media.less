@@ -1,0 +1,170 @@
+/**
+ * Images, WP Gallery and Objects
+ * ========================================================
+ */
+
+
+/************* Objects *************/
+
+iframe, video, object, embed { max-width: 100%; }
+video, object, embed { margin: @verticalMargin 0; }
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin: @verticalMargin 0;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure {
+	margin: 0;
+	max-width: 100%;
+}
+
+
+/************* Images *************/
+
+img, a img {
+	border: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	image-rendering: optimizeQuality;
+	vertical-align: top;
+}
+img { .box-sizing( border-box ); /* to accomodate border and padding width, and maintain responsive */ }
+
+
+/************* Image Styles *************/
+
+.img-round { .border-radius( 8px ); }
+.img-circle { .border-radius( 1500px ); }
+.img-polaroid {
+	padding: 4px;
+	border: 1px solid;
+}
+.img-frame {
+	padding: 4px;
+	border: 1px solid;
+}
+.img-noborder img, img.img-noborder {
+	.box-shadow( none ) !important;
+	border: none !important;
+}
+
+
+/************* WP editor image sizes ($content_width classes) *************/
+
+.wp-post-image { }
+.size-thumbnail { }
+.size-medium { }
+.size-large { }
+.size-full { }
+.size-auto { }
+
+
+/************* Wordpress Gallery (Overwrite WP's inline Gallery CSS) *************/
+
+.gallery {
+	border: solid 1px @bgHighlightToneColor;
+	background: @bgHighlightColor;
+	padding: 10px;
+	margin: @verticalMargin 0;
+}
+.gallery .gallery-item {
+	padding: 10px;
+	.box-sizing( border-box );
+}
+.gallery .gallery-icon { }
+.gallery .gallery-icon img {
+	padding: 0;
+	max-width: 100%;
+}
+.gallery .gallery-caption {
+	color: @baseFontColor;
+	margin: 3px 0;
+	.small-font();
+}
+.attachment-thumbnail { }
+.attachment-medium { }
+.attachment-large { }
+.attachment-full { }
+
+/** Block Editor **/
+
+.wp-block-embed {
+	margin: @verticalMargin 0;
+	iframe, video, object, embed { margin: 0; }
+}
+.wordpress .wp-block-gallery { // Update from ul.wp-block-gallery for WP 5.3
+	border: solid 1px @bgHighlightToneColor;
+	background: @bgHighlightColor;
+	padding: 16px 16px 0;
+	list-style-type: none;
+}
+.wordpress .blocks-gallery-grid { margin: 0; list-style-type: none; }
+.blocks-gallery-caption { width: 100%; text-align: center; position: relative; top: -0.5em; }
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+	background: linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,.3) 0%,transparent);
+	.box-sizing(border-box);
+	.medium-font();
+}
+
+
+/************* WordPress Image Captions *************/
+
+.wp-caption { background: @bgHighlightColor; }
+.wp-caption-text, .wp-block-image figcaption {
+	border: solid 1px @bgHighlightToneColor;
+	color: @baseFontColor;
+	margin: 0;
+	padding: 5px;
+	.small-font();
+	text-align: center;
+}
+
+
+/************* WordPress Image Alignment *************/
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: @verticalMargin auto;
+	text-align: center;
+}
+img.aligncenter { margin: @verticalMargin auto }
+.alignleft {
+	float: left;
+	margin: 10px @bigVerticalMargin 5px 0;
+	display: block;
+}
+.alignright {
+	float: right;
+	margin: 10px 0 5px @bigVerticalMargin;
+	display: block;
+}
+.alignleft img, .alignright img { display :block; }
+.alignnone { }
+
+
+/************* Avatar *************/
+
+.avatar { display: inline-block; }
+.avatar.pull-left {
+	float: left;
+	margin: 0 1em 5px 0;
+}
+.avatar.pull-right {
+	float: right;
+	margin: 0 0 5px 1em;
+}

@@ -1,0 +1,84 @@
+/**
+ * Utility Classes
+ * ========================================================
+ */
+
+
+/************* Misc *************/
+
+#page-wrapper .flush { .flush(); }
+
+
+/************* Displays *************/
+
+.hide { display: none; }
+.forcehide { display: none !important; }
+.border-box {
+	display: block;
+	.box-sizing(border-box)
+}
+
+
+/************* Image replacement *************/
+
+.hide-text { .hide-text(); }
+
+
+/************* Table *************/
+
+.table {
+	.table();
+	margin: 0;
+	&.table-fixed { table-layout: fixed; }
+}
+.table-cell { .table-cell(); }
+.table-cell-mid { .table-cell-mid(); }
+@media only screen and (max-width: @breakPoint) {
+	.table, .table-cell, .table-cell-mid { display: block; }
+}
+
+
+/************* Floats *************/
+
+.fleft, .float-left { float: left; }
+.fright, .float-right { float: right; }
+.fclear, .float-clear, .clear, .clearfix { .clearfix(); }
+
+
+/************* Accessibility: Assistive Text *************/
+/* for screen readers and text browsers */
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.screen-reader-text:active, .screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+/* Do not show the outline on the skip link target. */
+#main[tabindex="-1"]:focus { outline: 0; }
